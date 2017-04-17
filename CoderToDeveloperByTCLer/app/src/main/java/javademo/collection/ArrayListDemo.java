@@ -52,7 +52,17 @@ public class ArrayListDemo {
             }
             else if(operType.equals("3"))
             {
-
+                System.out.println("请输入编号");
+                String empNo=br.readLine();
+                System.out.println("请输入修改后工资");
+                float sal=Float.parseFloat(br.readLine());
+                em.updateSal(empNo,sal);
+            }
+            else if(operType.equals("4"))
+            {
+                System.out.println("请输入编号");
+                String empNo=br.readLine();
+                em.delEmp(empNo);
             }
             else if(operType.equals("5"))
             {
