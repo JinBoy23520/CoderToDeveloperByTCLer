@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Vector;
 
 import javademo.Entity.Emp;
@@ -13,7 +14,11 @@ import javademo.Entity.Emp;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/04/16
- *     desc   :
+ *     desc   : map演示
+ *     总结   ：
+ *     1.HashMap 是一个散列表，是存放一对值的最大接口，即接口中的每一个元素都是一对，以key->value键值对的形式保存
+ *     2.四种遍历
+ *     3.TreeMap 延伸阅读 http://blog.csdn.net/chenssy/article/details/26668941
  *     version: 1.0
  * </pre>
  */
@@ -71,7 +76,7 @@ public class MapDemo {
 		{
 			System.out.println("没有该员工");
 		}
-		//遍历HashMap中所有的key和value   去除的值没有顺序
+		//遍历HashMap中所有的key和value   去除的值没有顺序 Iterator迭代器用于遍历
 		Iterator it=hm.keySet().iterator();
 		// hasNext返回一个boolean
 		while(it.hasNext())
@@ -83,8 +88,62 @@ public class MapDemo {
 			System.out.println("薪水："+emp.getSal());
 		}
 
+
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("1", "value1");
+		map.put("2", "value2");
+		map.put("3", "value3");
+		System.out.println("通过Map.keySet遍历key和value：");
+		for (String key : map.keySet()) {
+			System.out.println("key= "+ key + " and value= " + map.get(key));
+		}
+
+		//第二种
+		System.out.println("通过Map.entrySet使用iterator遍历key和value：");
+		Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry<String, String> entry = iterator.next();
+			System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
+		}
+
+		//第三种：推荐，尤其是容量大时
+		System.out.println("通过Map.entrySet遍历key和value");
+		for (Map.Entry<String, String> entry : map.entrySet()) {
+			System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
+		}
+
+		//第四种
+		System.out.println("通过Map.values()遍历所有的value，但不能遍历key");
+		for (String v : map.values()) {
+			System.out.println("value= " + v);
+		}
+	}
         //演示HashTable
 //        Hashtable ht=new Hashtable();
 
     }
-}
+
+    /**
+    运行结果
+    有该员工
+    名字：老桑
+    名字老王
+    薪水：3.5
+    名字老桑
+    薪水：3.5
+    名字aaa
+    薪水：3.5
+    通过Map.keySet遍历key和value：
+    key= 1 and value= value1
+    key= 2 and value= value2
+    key= 3 and value= value3
+    通过Map.entrySet使用iterator遍历key和value：
+    通过Map.entrySet遍历key和value
+    key= 1 and value= value1
+    key= 2 and value= value2
+    key= 3 and value= value3
+    通过Map.values()遍历所有的value，但不能遍历key
+    value= value1
+    value= value2
+    value= value3**/
+
