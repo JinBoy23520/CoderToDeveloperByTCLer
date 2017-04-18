@@ -20,7 +20,7 @@ import javademo.Entity.Color;
 import javademo.Entity.Dog;
 
 public class CollectionEnumgGnericsActivity extends Activity implements View.OnClickListener {
-    private Button button, button1;
+    private Button button, button1 , button2;
     private TextView textView;
     private ArrayList<? super Animal> arrayList;
     @Override
@@ -29,10 +29,12 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
         setContentView(R.layout.activity_collection_enumg_gnerics);
         button= (Button) findViewById(R.id.button);
         button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
         textView = (TextView) findViewById(R.id.text);
         arrayList = new ArrayList<>();
         button.setOnClickListener(this);
         button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
     }
 
     public void button(){
@@ -45,6 +47,11 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
         Cat cat = new Cat("喵喵","3", Color.blue.toString());
         arrayList.add(cat);
         setText();
+    }
+
+    public void button2(){
+        arrayList.clear();
+        textView.setText("");
     }
 
     public void setText(){
@@ -66,6 +73,9 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
                 break;
             case R.id.button1:
                 button1();
+                break;
+            case R.id.button2:
+                button2();
                 break;
         }
     }
