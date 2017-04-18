@@ -3,6 +3,11 @@ package javademo.generics;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.List;
+
+import javademo.Entity.Bird;
+import javademo.Entity.Dog;
+import javademo.Entity.Gen;
 
 /**
  * <pre>
@@ -10,6 +15,12 @@ import java.util.ArrayList;
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/04/16
  *     desc   : 泛型演示
+ *     总结   ; 1.Class<T>在实例化的时候，T要替换成具体类
+ *                Class<?>它是个通配泛型，?可以代表任何类型
+ *              2.<? extends T>受限统配，表示T的一个未知子类。
+ *                <? super T>下限统配，表示T的一个未知父类。
+ *              3.泛型体现java反射，获取类方法 属性信息
+ *              4.便于代码的复用，减少代码量
  *     version: 1.0
  * </pre>
  */
@@ -20,85 +31,28 @@ public class Generics {
      */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        ArrayList<Dog> al=new ArrayList<Dog>();   // al 的类型就与 Dog绑定了
+        ArrayList<Dog> al = new ArrayList<Dog>();   // al 的类型就与 Dog绑定了
         //创建一只狗
-        Dog dog1=new Dog();
+        Dog dog1 = new Dog();
         //放入到集合中
         al.add(dog1);
         //	Dog temp=(Dog)al.get(0);
         //	Cat temp=(Cat)al.get(0);
 
         //	Dog temp=al.get(0);   //取al里中的第一个元素 不用强制类型转换
-        Gen<Bird> gen1=new Gen<Bird>(new Bird());
+        Gen<Bird> gen1 = new Gen<Bird>(new Bird());
         gen1.showTypeName();
+        getData(al);
     }
+    public static void getData(ArrayList<?> data) {
+        System.out.println("data :" + data.get(0));
+    }
+}
 
-}
-//定义一个个Bird
-class Bird
-{
-    public void test1()
-    {
-        System.out.println("aa");
-    }
-    public void count(int a, int b)
-    {
-        System.out.println(a+b);
-    }
-}
-//定义一个类
-class Gen<T>
-{
-    private T o;
-    // 得到T的类型和名称
-    public Gen(T a)
-    {
-        o=a;
-    }
-    public void showTypeName()
-    {
-        System.out.println("类型是："+o.getClass().getName());
-        //通过反射机制可以得到T类型的很多信息（比如说得到成员函数名）
-        Method[]m=o.getClass().getDeclaredMethods();
-        //  打印
-        for(int i=0; i<m.length; i++)
-        {
-            System.out.println(m[i].getName());
-        }
-    }
-
-}
-class Cat
-{
-    private String color;
-    private int age;
-    public String getColor() {
-        return color;
-    }
-    public void setColor(String color) {
-        this.color = color;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
-class Dog
-{
-    private String name;
-    private int age;
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-}
+    /**
+     * 输出
+     类型是：javademo.generics.Bird
+     count
+     test1
+     data :javademo.generics.Dog@7d4991ad
+    */
