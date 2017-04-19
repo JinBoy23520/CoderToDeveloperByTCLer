@@ -23,6 +23,8 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
     private Button button, button1 , button2;
     private TextView textView;
     private ArrayList<? super Animal> arrayList;
+    int i = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +40,15 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
     }
 
     public void button(){
-        Dog dog = new Dog("多多","2", Color.green.toString());
+        i++;
+        Dog dog = new Dog("多多" + i,"2", Color.green.toString());
         arrayList.add(dog);
         setText();
     }
 
     public void button1(){
-        Cat cat = new Cat("喵喵","3", Color.blue.toString());
+        i++;
+        Cat cat = new Cat("喵喵" + i,"3", Color.blue.toString());
         arrayList.add(cat);
         setText();
     }
