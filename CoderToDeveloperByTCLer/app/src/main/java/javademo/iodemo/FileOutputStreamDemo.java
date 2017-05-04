@@ -10,21 +10,18 @@ import java.io.IOException;
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/05/02
  *     desc   :  演示 FileOutputStream
- *              1:切记一定要先判断文件是否已经存在，否则会把原有的文件覆盖
+ *              1:创建文件并输入内容切记一定要先判断文件是否已经存在，否则会把原有的文件覆盖
  *     version: 1.0
  * </pre>
  */
-
 public class FileOutputStreamDemo {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-
         File f = new File("C:/Users/Administrator/Desktop/ss.txt");
         FileOutputStream fos = null;
         if (!f.exists()) {
             try {
                 fos = new FileOutputStream(f);
-
                 String s = "老桑，向世界问好\r\n";
                 String s1 = "美女，向世界问好";
                 //定义字节数组

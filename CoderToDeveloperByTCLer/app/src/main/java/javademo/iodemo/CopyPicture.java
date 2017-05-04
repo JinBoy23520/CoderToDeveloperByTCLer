@@ -9,11 +9,10 @@ import java.io.IOException;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/05/02
- *     desc   :
+ *     desc   : 复制照片
  *     version: 1.0
  * </pre>
  */
-
 public class CopyPicture {
     public static void main(String[] args) {
         // TODO Auto-generated method stub

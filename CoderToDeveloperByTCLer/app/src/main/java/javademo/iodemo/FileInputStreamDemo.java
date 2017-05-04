@@ -14,7 +14,6 @@ import java.io.IOException;
  *     version: 1.0
  * </pre>
  */
-
 public class FileInputStreamDemo {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -23,7 +22,6 @@ public class FileInputStreamDemo {
         //因为File没有读功能，所以需要一个InputStream
         try {
             fis = new FileInputStream(f);
-
             //定义一个字节数组
             byte[] bytes = new byte[1024];
             //循环读取

@@ -12,7 +12,7 @@ import java.io.IOException;
  *     desc   : 功能： File类的功能
  *              1:创建一个文件流，判断文件是否存在如果存不存在就创建新文件，前提必须在文件所在的文件夹必须存在
  *              2：创建文件夹
- * 3            ：把文件夹下面的的文件的信息显示出来，或者递归从文件夹下面找到
+ *              3：把文件夹下面的的文件的信息显示出来，或者递归从文件夹下面找到
  *     version: 1.0
  * </pre>
  */
@@ -28,7 +28,6 @@ public class FileDemo {
 //        System.out.println("文件大小" + f.length());
 //        //判断文件是否可读
 //        System.out.println("可读" + f.canRead());
-
 
 //        判断文件是否存在
 //		File f=new File("C:/Users/Administrator/Desktop/aa.txt");
@@ -47,7 +46,6 @@ public class FileDemo {
 //			System.out.println("文件已经存在");
 //		}
 
-
 		//判断文件夹是否存在
 //		File f=new File("C:/Users/Administrator/Desktop/ff");
 //		if(f.isDirectory())  //如果文件夹存在
@@ -57,7 +55,6 @@ public class FileDemo {
 //			//创建文件夹
 //			f.mkdir();
 //		}
-
 
         //列出一个文件夹下面所有的文件
         File f = new File("C:/Users/Administrator/Desktop");
