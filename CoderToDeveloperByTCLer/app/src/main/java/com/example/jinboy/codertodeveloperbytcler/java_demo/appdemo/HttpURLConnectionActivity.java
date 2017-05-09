@@ -1,9 +1,6 @@
 package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo;
 
 import android.app.Activity;
-
-import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.getdata.GetData;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -14,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.getdata.GetData;
 
 
 /**

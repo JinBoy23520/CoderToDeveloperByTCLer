@@ -5,14 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 import java.util.ArrayList;
+
 import javademo.entity.Animal;
 import javademo.entity.Cat;
 import javademo.entity.Color;
 import javademo.entity.Dog;
 
 public class CollectionEnumgGnericsActivity extends Activity implements View.OnClickListener {
-    private Button button, button1 , button2;
+    private Button button, button1, button2;
     private TextView textView;
     private ArrayList<? super Animal> arrayList;
     int i = 0;
@@ -21,7 +23,7 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection_enumg_gnerics);
-        button= (Button) findViewById(R.id.button);
+        button = (Button) findViewById(R.id.button);
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         textView = (TextView) findViewById(R.id.text);
@@ -31,32 +33,32 @@ public class CollectionEnumgGnericsActivity extends Activity implements View.OnC
         button2.setOnClickListener(this);
     }
 
-    public void button(){
+    public void button() {
         i++;
-        Dog dog = new Dog("多多" + i,"2", Color.green.toString());
+        Dog dog = new Dog("多多" + i, "2", Color.green.toString());
         arrayList.add(dog);
         setText();
     }
 
-    public void button1(){
+    public void button1() {
         i++;
-        Cat cat = new Cat("喵喵" + i,"3", Color.blue.toString());
+        Cat cat = new Cat("喵喵" + i, "3", Color.blue.toString());
         arrayList.add(cat);
         setText();
     }
 
-    public void button2(){
+    public void button2() {
         arrayList.clear();
         textView.setText("");
     }
 
-    public void setText(){
+    public void setText() {
         textView.setText("");
         String string = "";
-        for(int i=0;i <  arrayList.size();i++){
+        for (int i = 0; i < arrayList.size(); i++) {
             Animal animal = (Animal) arrayList.get(i);
-            String text = "姓名" + animal.getName() + "   年龄" +  animal.getAge() + "  颜色"  + animal.getColor() + "\n";
-            string += text ;
+            String text = "姓名" + animal.getName() + "   年龄" + animal.getAge() + "  颜色" + animal.getColor() + "\n";
+            string += text;
         }
         textView.setText(string);
     }
