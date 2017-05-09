@@ -2,10 +2,9 @@ package javademo.collection;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
-import javademo.Entity.Emp;
-import javademo.Entity.EmpManage;
+import javademo.entity.Emp;
+import javademo.entity.EmpManage;
 
 /**
  * <pre>

@@ -1,23 +1,15 @@
-package javademo.appdemo;
+package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.example.jinboy.codertodeveloperbytcler.R;
-
 import java.util.ArrayList;
-
-import javademo.Entity.Animal;
-import javademo.Entity.Cat;
-import javademo.Entity.Color;
-import javademo.Entity.Dog;
+import javademo.entity.Animal;
+import javademo.entity.Cat;
+import javademo.entity.Color;
+import javademo.entity.Dog;
 
 public class CollectionEnumgGnericsActivity extends Activity implements View.OnClickListener {
     private Button button, button1 , button2;

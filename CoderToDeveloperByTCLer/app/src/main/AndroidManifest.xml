@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jinboy.codertodeveloperbytcler">
+    package="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,8 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="javademo.appdemo.CollectionEnumgGnericsActivity"
-            android:label="@string/title_activity_collection_enumg_gnerics"
+            android:name="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.CollectionEnumgGnericsActivity">
+
+        </activity>
+        <activity android:name="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.HttpURLConnectionActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

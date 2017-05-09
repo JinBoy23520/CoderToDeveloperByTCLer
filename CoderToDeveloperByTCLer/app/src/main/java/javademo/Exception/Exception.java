@@ -1,4 +1,4 @@
-package javademo.Exception;
+package javademo.exception;
 
 import java.io.FileReader;
 

@@ -1,13 +1,11 @@
 package javademo.generics;
 
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.List;
 
-import javademo.Entity.Bird;
-import javademo.Entity.Dog;
-import javademo.Entity.Gen;
+import javademo.entity.Bird;
+import javademo.entity.Dog;
+import javademo.entity.Gen;
 
 /**
  * <pre>
