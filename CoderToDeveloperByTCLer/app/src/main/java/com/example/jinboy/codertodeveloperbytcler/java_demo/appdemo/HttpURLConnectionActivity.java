@@ -25,7 +25,6 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.getdata.GetD
  * </pre>
  */
 public class HttpURLConnectionActivity extends Activity implements View.OnClickListener {
-
     private Button bt_tobaidu, bt_getimage, bt_tobaiduhtml;
     private WebView wb_tobaidu;
     private TextView tv_tobaiduhtml;
@@ -48,7 +47,6 @@ public class HttpURLConnectionActivity extends Activity implements View.OnClickL
         bt_tobaidu.setOnClickListener(this);
         bt_getimage.setOnClickListener(this);
         bt_tobaiduhtml.setOnClickListener(this);
-
     }
 
     // 用于刷新界面

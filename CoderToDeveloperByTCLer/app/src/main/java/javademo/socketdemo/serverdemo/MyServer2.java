@@ -11,7 +11,7 @@ import java.net.Socket;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/05/02
- *     desc   :
+ *     desc   : 半双工通信演示服务端
  *     version: 1.0
  * </pre>
  */

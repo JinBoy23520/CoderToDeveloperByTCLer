@@ -10,7 +10,7 @@ import java.net.Socket;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/05/02
- *     desc   :
+ *     desc   : 半双工通信演示客户端
  *     version: 1.0
  * </pre>
  */
@@ -25,9 +25,7 @@ public class MyClient2 {
         try {
             //连接服务器，公司电脑ip在变，cmd里输入ipconfig查询
             Socket s = new Socket("10.68.215.151", 9999);
-
             PrintWriter pw = new PrintWriter(s.getOutputStream(), true);
-
             InputStreamReader isr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(isr);
 
@@ -53,12 +51,9 @@ public class MyClient2 {
                 System.out.println("服务器说" + res);
 
             }
-
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
         }
-
-
     }
 }
