@@ -22,3 +22,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [ Android Studio 解析XML的三种方法](http://blog.csdn.net/dt235201314/article/details/71588252 "鼠标悬停显示")
 <br>
+<br>
+[ Android处理后台返回数据——Json转实体类](http://blog.csdn.net/dt235201314/article/details/69951885 "鼠标悬停显示")
+<br>
