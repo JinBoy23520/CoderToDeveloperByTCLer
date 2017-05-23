@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@null">
+
+    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.TabIconView
+        android:id="@+id/iv_tab_icon"
+        android:layout_marginTop="3dp"
+        android:layout_width="@dimen/tab_icon_width"
+        android:layout_height="@dimen/tab_icon_height"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/iv_tab_icon"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+

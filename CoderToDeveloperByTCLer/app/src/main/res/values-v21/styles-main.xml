@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme.Launch" parent="AppTheme.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/welcome_bg2</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="HorizontalSplit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.26dp</item>
+        <item name="android:background">@color/gray1</item>
+    </style>
+
+    <string-array name="tab_main_title">
+        <item>数据</item>
+        <item>我的</item>
+    </string-array>
+
+</resources>

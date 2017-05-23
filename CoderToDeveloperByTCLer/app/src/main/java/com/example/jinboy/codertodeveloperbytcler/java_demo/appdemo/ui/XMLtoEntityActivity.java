@@ -1,4 +1,4 @@
-package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo;
+package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.Person;
 
 import java.io.IOException;

@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CollectionEnumgGnericsActivity" />
+        <activity android:name=".ui.CollectionEnumgGnericsActivity" />
         <activity
-            android:name=".HttpURLConnectionActivity"
+            android:name=".ui.HttpURLConnectionActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".HomeActivity"
+        <activity android:name=".ui.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".XMLtoEntityActivity"/>
+        <activity android:name=".ui.XMLtoEntityActivity"/>
     </application>
 
 </manifest>

@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/home_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button1"
+    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CustomViewPager
+        android:id="@+id/tab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <View
+        style="@style/HorizontalSplit"/>
+
+    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.TabContainerView
+        android:id="@+id/ll_tab_container"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:onClick="start1"
-        android:text="集合枚举泛型Demo演示"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:onClick="start2"
-        android:text="HttpURLConnection显示网页，图片，代码"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:onClick="start3"
-        android:text="XML三种解析方式演示"/>
-
+        android:background="@color/home_tab_bg" />
 </LinearLayout>
