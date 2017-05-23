@@ -16,3 +16,12 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [Java I/O](http://blog.csdn.net/dt235201314/article/details/70841306 "鼠标悬停显示")
 <br>
+<br>
+[Java 网络编程 OSI TCP/IP http/https HttpURLConnection/HttpClient Socket](http://blog.csdn.net/dt235201314/article/details/71480961 "鼠标悬停显示")
+<br>
+<br>
+[ Android Studio 解析XML的三种方法](http://blog.csdn.net/dt235201314/article/details/71588252 "鼠标悬停显示")
+<br>
+<br>
+[ Android处理后台返回数据——Json转实体类](http://blog.csdn.net/dt235201314/article/details/69951885 "鼠标悬停显示")
+<br>
