@@ -17,4 +17,21 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="HomeHeadNameItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textColor">@color/black33</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="HomeLightText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black99</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
 </resources>

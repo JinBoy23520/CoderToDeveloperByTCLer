@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/white" />
+
+    <!-- 描边 -->
+    <corners
+        android:radius="@dimen/banner_indicator_size"
+      />
+    <!-- 设置圆角 -->
+
+</shape>

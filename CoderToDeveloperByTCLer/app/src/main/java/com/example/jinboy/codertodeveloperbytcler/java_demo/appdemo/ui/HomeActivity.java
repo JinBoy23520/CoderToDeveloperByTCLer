@@ -57,17 +57,12 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
 
         TabContainerView mTabLayout = (TabContainerView) findViewById(R.id.ll_tab_container);
         mTabLayout.setOnPageChangeListener(this);
-
         mTabLayout.initContainer(getResources().getStringArray(R.array.tab_main_title), ICONS_RES, TAB_COLORS, true);
-
         int width = getResources().getDimensionPixelSize(R.dimen.tab_icon_width);
         int height = getResources().getDimensionPixelSize(R.dimen.tab_icon_height);
         mTabLayout.setContainerLayout(R.layout.tab_container_view, R.id.iv_tab_icon, R.id.tv_tab_text, width, height);
-
         mTabLayout.setViewPager(mPager);
-
         mPager.setCurrentItem(getIntent().getIntExtra("tab", 0));
-
     }
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

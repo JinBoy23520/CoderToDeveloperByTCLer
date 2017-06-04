@@ -1,13 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.fragment.HomeFragment">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_below="@+id/title_home"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <include layout="@layout/home_content_main" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/title_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/title_colcor"
+        android:textColor="@color/black"
+        android:text="首页"/>
+
+</RelativeLayout>

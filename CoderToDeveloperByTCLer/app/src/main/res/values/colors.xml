@@ -7,4 +7,14 @@
     <color name="blue_bg">#45a2ff</color>
     <color name="gray1">#c1bdbd</color>
     <color name="home_tab_bg">#F9F9F9</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="title_colcor">#F9F9F9</color>
+    <color name="blueLight">#7eb3ff</color>
+    <color name="btn_cm_bg_pressed">#eaeff4</color>
+    <color name="withe">#ffffff</color>
+    <color name="home_orange">#FAB21F</color>
+    <color name="black33">#333333</color>
+    <color name="black66">#666666</color>
+    <color name="black99">#999999</color>
 </resources>
