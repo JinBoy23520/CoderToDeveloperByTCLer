@@ -15,10 +15,10 @@ import android.view.ViewGroup;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBaseEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.adapter.HomeAdapter;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -47,7 +47,10 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     public void intData(){
         BannerEntity bannerEntity = new BannerEntity();
         bannerEntity.parseData();
+        MenuEntrty menuEntrty = new MenuEntrty();
+        menuEntrty.parseData();
         mEntities.add(bannerEntity);
+        mEntities.add(menuEntrty);
     }
 
     public void initView () {

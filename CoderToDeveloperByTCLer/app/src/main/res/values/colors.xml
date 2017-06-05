@@ -17,4 +17,5 @@
     <color name="black33">#333333</color>
     <color name="black66">#666666</color>
     <color name="black99">#999999</color>
+    <color name="home_gray_item_bg">#F0EFF4</color>
 </resources>

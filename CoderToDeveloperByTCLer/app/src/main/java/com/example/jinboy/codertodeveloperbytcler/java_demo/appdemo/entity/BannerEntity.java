@@ -34,11 +34,11 @@ public class BannerEntity extends AbsBaseEntity {
     public void parseData() {
         BannerEntity bannerEntity = new BannerEntity();
         BannerItem bannerItem1 = new BannerItem();
-        bannerItem1.setImageUrl("http://img.my.csdn.net/uploads/201706/02/1496381832_3993.png-thumb.jpg");
+        bannerItem1.setImageUrl("http://img.my.csdn.net/uploads/201706/05/1496633391_3312.png-thumb.jpg");
         bannerItem1.setWebUrl("http://blog.csdn.net/dt235201314");
         mBannerItems.add(bannerItem1);
         BannerItem bannerItem2 = new BannerItem();
-        bannerItem2.setImageUrl("http://img.my.csdn.net/uploads/201706/02/1496381811_1182.png-thumb.jpg");
+        bannerItem2.setImageUrl("http://img.my.csdn.net/uploads/201706/05/1496633360_6095.png-thumb.jpg");
         bannerItem2.setWebUrl("http://www.jianshu.com/u/905c7de5ae83");
         mBannerItems.add(bannerItem2);
         BannerItem bannerItem3 = new BannerItem();

@@ -1,4 +1,4 @@
-package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui;
+package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.java;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

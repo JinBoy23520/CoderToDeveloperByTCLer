@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBaseEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     //设置两个常量
     private final int TYPE_BANNER = 0;        //广告位
     private final int TYPE_MENU = 1;          //菜单
+    private final int TYPE_JAVA = 2;          //JavaDemo页面
 
 
     public HomeAdapter(Context context, List<AbsBaseEntity> typeList) {
@@ -45,10 +47,10 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         AbsBaseEntity entity = typeList.get(position);
         if (entity instanceof BannerEntity) {
             return TYPE_BANNER;
-//        } else if (entity instanceof MenuEntrty) {
-//            return TYPE_MENU;
-//        } else if (entity instanceof KPIEntity) {
-//            return  TYPE_KPI;
+        } else if (entity instanceof MenuEntrty) {
+            return TYPE_MENU;
+//        } else if (entity instanceof JavaEntity) {
+//            return  TYPE_JAVA;
 //        } else if (entity instanceof SaleEntity) {
 //            return  TYPE_SALE;
 //        } else if (entity instanceof FansEntity) {
@@ -72,8 +74,8 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         switch (viewType) {
             case TYPE_BANNER:  //广告
                 return new BannerItemViewHolder(context, mInflater.inflate(R.layout.home_banner_view, parent, false));
-//                case TYPE_MENU:    //菜单
-//                    return new MenuItemViewHolder(mContext, mInflater.inflate(R.layout.home_menu_container, parent, false));
+            case TYPE_MENU:    //菜单
+                return new MenuItemViewHolder(context, mInflater.inflate(R.layout.home_menu_container, parent, false));
 //                case TYPE_KPI:     //KPI
 //                    return new KPIItemViewHolder(mContext, mInflater.inflate(R.layout.home_kpi_item, parent, false));
 //                case TYPE_SALE:    //销售
@@ -96,6 +98,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     /**
      * 这里抽取一层，继承BaseItemViewHolder，分别处理
+     *
      * @param viewHolder
      * @param position
      */
