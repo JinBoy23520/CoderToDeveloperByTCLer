@@ -33,7 +33,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     //设置两个常量
     private final int TYPE_BANNER = 0;        //广告位
     private final int TYPE_MENU = 1;          //菜单
-    private final int TYPE_JAVA = 2;          //JavaDemo页面
+    private final int TYPE_JAVA = 2;          //JavaDemo 页面
 
 
     public HomeAdapter(Context context, List<AbsBaseEntity> typeList) {
