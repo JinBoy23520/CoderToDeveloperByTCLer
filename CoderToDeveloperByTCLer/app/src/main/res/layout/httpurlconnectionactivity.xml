@@ -16,28 +16,6 @@
         android:text="请求网页"
         android:id="@+id/bt_tobaidu" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="请求图片"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/bt_tobaidu"
-        android:layout_toEndOf="@+id/bt_tobaidu"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:id="@+id/bt_getimage" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="请求html"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="25dp"
-        android:layout_marginEnd="25dp"
-        android:id="@+id/bt_tobaiduhtml" />
-
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,5 +35,22 @@
         android:layout_below="@+id/bt_tobaidu"
         android:visibility="gone"
         android:id="@+id/tv_tobaiduhtml"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="请求html"
+        android:id="@+id/bt_tobaiduhtml"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="请求图片"
+        android:id="@+id/bt_getimage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
