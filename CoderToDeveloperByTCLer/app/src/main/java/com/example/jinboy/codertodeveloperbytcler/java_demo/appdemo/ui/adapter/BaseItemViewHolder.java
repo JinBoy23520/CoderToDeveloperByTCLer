@@ -41,10 +41,9 @@ abstract class BaseItemViewHolder<T extends AbsBaseEntity> extends RecyclerView.
 
     public abstract void onBindViewHolder(T entity);
 
-    void updateHeadInfos(T entity, int lineColor, int titleRes, String time) {
+    void updateHeadInfos(T entity, int lineColor,String titleRes) {
         mHeadLineV.setBackgroundColor(mContext.getResources().getColor(lineColor));
         mHeadNameTv.setText(titleRes);
-        mHeadTimeTv.setText(time);
         setHeadViewOnClickListener(entity, mHeadContainerLl);
     }
 

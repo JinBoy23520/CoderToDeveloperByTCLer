@@ -14,8 +14,12 @@ import android.view.ViewGroup;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBaseEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AndroidUIEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.adapter.HomeAdapter;
 
 import java.util.ArrayList;
@@ -49,8 +53,20 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         bannerEntity.parseData();
         MenuEntrty menuEntrty = new MenuEntrty();
         menuEntrty.parseData();
+        JavaEntity javaEntity = new JavaEntity();
+        javaEntity.parseData();
+        AndroidUIEntity androidUIEntity = new AndroidUIEntity();
+        androidUIEntity.parseData();
+        RecyclerViewEntity recyclerViewEntity = new RecyclerViewEntity();
+        recyclerViewEntity.parseData();
+        MyViewEntity myViewEntity = new MyViewEntity();
+        myViewEntity.parseData();
         mEntities.add(bannerEntity);
         mEntities.add(menuEntrty);
+        mEntities.add(javaEntity);
+        mEntities.add(androidUIEntity);
+        mEntities.add(recyclerViewEntity);
+        mEntities.add(myViewEntity);
     }
 
     public void initView () {

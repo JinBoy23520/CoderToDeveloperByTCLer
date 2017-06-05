@@ -13,25 +13,25 @@
         <activity android:name=".ui.java.CollectionEnumgGnericsActivity" />
         <activity
             android:name=".ui.java.HttpURLConnectionActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
-        <activity android:name=".ui.HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar">>
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.java.XMLtoEntityActivity"/>
+        <activity android:name=".ui.java.XMLtoEntityActivity" />
+        <activity android:name=".ui.JavaDemoActivity" />
+        <activity android:name=".ui.AndroidUIActivity" />
+        <activity android:name=".ui.MyViewActivity" />
+        <activity android:name=".ui.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>

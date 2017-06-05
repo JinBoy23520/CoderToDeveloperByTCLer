@@ -41,8 +41,8 @@ public class MenuEntrty extends AbsBaseEntity {
         menuItemEntity2.setImgId(R.drawable.recyclerview_img);
         mItemEntities.add(menuItemEntity2);
         MenuItemEntity menuItemEntity3 = new MenuItemEntity();
-        menuItemEntity3.setTitle("RecyclerView");
-        menuItemEntity3.setImgId(R.drawable.recyclerview_img);
+        menuItemEntity3.setTitle("MyView");
+        menuItemEntity3.setImgId(R.drawable.view_img);
         mItemEntities.add(menuItemEntity3);
         MenuItemEntity menuItemEntity4 = new MenuItemEntity();
         menuItemEntity4.setTitle("RecyclerView");

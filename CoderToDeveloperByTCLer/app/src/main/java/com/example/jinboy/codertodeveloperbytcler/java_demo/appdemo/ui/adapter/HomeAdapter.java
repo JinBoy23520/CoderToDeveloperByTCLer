@@ -7,8 +7,12 @@ import android.view.ViewGroup;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBaseEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AndroidUIEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 
 import java.util.List;
 
@@ -34,7 +38,9 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final int TYPE_BANNER = 0;        //广告位
     private final int TYPE_MENU = 1;          //菜单
     private final int TYPE_JAVA = 2;          //JavaDemo 页面
-
+    private final int TYPE_ANDRIOD_UI = 3;    //Android UI 页面
+    private final int TYPE_RECYCLERVIEW = 4;    //RecyclerViewDemo 页面
+    private final int TYPE_MYVIEW = 5;    //自定义View 页面
 
     public HomeAdapter(Context context, List<AbsBaseEntity> typeList) {
         this.context = context;
@@ -49,14 +55,14 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             return TYPE_BANNER;
         } else if (entity instanceof MenuEntrty) {
             return TYPE_MENU;
-//        } else if (entity instanceof JavaEntity) {
-//            return  TYPE_JAVA;
-//        } else if (entity instanceof SaleEntity) {
-//            return  TYPE_SALE;
-//        } else if (entity instanceof FansEntity) {
-//            return  TYPE_FANS;
-//        } else if (entity instanceof ServiceEntity) {
-//            return  TYPE_SERVICE;
+        } else if (entity instanceof JavaEntity) {
+            return TYPE_JAVA;
+        } else if (entity instanceof AndroidUIEntity) {
+            return TYPE_ANDRIOD_UI;
+        } else if (entity instanceof RecyclerViewEntity) {
+            return TYPE_RECYCLERVIEW;
+        } else if (entity instanceof MyViewEntity) {
+            return TYPE_MYVIEW;
 //        } else if (entity instanceof YuqingEntity) {
 //            return  TYPE_YUQING;
 //        } else if (entity instanceof FinanceHomeEntity) {
@@ -76,16 +82,16 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 return new BannerItemViewHolder(context, mInflater.inflate(R.layout.home_banner_view, parent, false));
             case TYPE_MENU:    //菜单
                 return new MenuItemViewHolder(context, mInflater.inflate(R.layout.home_menu_container, parent, false));
-//                case TYPE_KPI:     //KPI
-//                    return new KPIItemViewHolder(mContext, mInflater.inflate(R.layout.home_kpi_item, parent, false));
-//                case TYPE_SALE:    //销售
-//                    return new SaleItemViewHolder(mContext, mInflater.inflate(R.layout.home_sales_item, parent, false));
-//
-//                case TYPE_FANS:   //粉丝
-//                    return new FansItemViewHolder(mContext, mInflater.inflate(R.layout.home_fans_item, parent, false));
-//
-//                case TYPE_SERVICE:  //服务
-//                    return new ServiceItemViewHolder(mContext, mInflater.inflate(R.layout.home_service_item, parent, false));
+            case TYPE_JAVA:     //JavaDemo
+                return new JavaItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
+            case TYPE_ANDRIOD_UI:    //Android UI 页面
+                return new AndroidUIItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
+
+            case TYPE_RECYCLERVIEW:   //RecyclerViewDemo
+                return new RecyclerViewItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
+
+            case TYPE_MYVIEW:  //自定义View
+                return new MyViewItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
 //
 //                case TYPE_YUQING:    //舆情
 //                    return new YuqingItemViewHolder(mContext, mInflater.inflate(R.layout.home_yuqing_item, parent, false));

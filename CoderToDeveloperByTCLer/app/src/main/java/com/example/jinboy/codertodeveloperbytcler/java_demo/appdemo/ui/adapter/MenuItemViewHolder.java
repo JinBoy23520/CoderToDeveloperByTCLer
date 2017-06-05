@@ -1,6 +1,7 @@
 package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,10 @@ import android.widget.TextView;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.AndroidUIActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.JavaDemoActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.MyViewActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.RecyclerViewActivity;
 
 
 /**
@@ -58,21 +63,26 @@ public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntrty> {
         }
         params.width = (int) width;
         view.setLayoutParams(params);
-
                 view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.drawable.java_img:
-
+                        Intent intent = new Intent(mContext,JavaDemoActivity.class);
+                        mContext.startActivity(intent);
                         break;
                     case R.drawable.ui_img:
-
+                        Intent intent1 = new Intent(mContext,AndroidUIActivity.class);
+                        mContext.startActivity(intent1);
                         break;
                     case R.drawable.recyclerview_img:
-
+                        Intent intent2 = new Intent(mContext,RecyclerViewActivity.class);
+                        mContext.startActivity(intent2);
                         break;
-
+                    case R.drawable.view_img:
+                        Intent intent3 = new Intent(mContext,MyViewActivity.class);
+                        mContext.startActivity(intent3);
+                        break;
                 }
             }
         });

@@ -18,4 +18,7 @@
     <color name="black66">#666666</color>
     <color name="black99">#999999</color>
     <color name="home_gray_item_bg">#F0EFF4</color>
+    <color name="title_line1">#F95F4D</color>
+    <color name="title_line2">#FAB21F</color>
+    <color name="title_line3">#78D125</color>
 </resources>
