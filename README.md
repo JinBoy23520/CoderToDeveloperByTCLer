@@ -25,3 +25,7 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [ Android处理后台返回数据——Json转实体类](http://blog.csdn.net/dt235201314/article/details/69951885 "鼠标悬停显示")
 <br>
+<br>
+[ ndroid UI 之 RecyclerView实现常见首页布局](http://blog.csdn.net/dt235201314/article/details/72833218 "鼠标悬停显示")
+<br>
+
