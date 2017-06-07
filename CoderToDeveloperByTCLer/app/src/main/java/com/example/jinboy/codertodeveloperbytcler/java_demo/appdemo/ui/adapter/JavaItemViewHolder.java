@@ -14,7 +14,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.JavaDemoA
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/06/05
- *     desc   :
+ *     desc   : Java概述页ViewHolder
  *     version: 1.0
  * </pre>
  */

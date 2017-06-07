@@ -15,7 +15,7 @@ import java.util.List;
  * </pre>
  */
 
-public class MenuEntrty extends AbsBaseEntity {
+public class MenuEntity extends AbsBaseEntity {
     private List<MenuItemEntity> mItemEntities = new ArrayList<>();
 
     public List<MenuItemEntity> getmItemEntities() {

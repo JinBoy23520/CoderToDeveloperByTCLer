@@ -17,7 +17,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBa
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AndroidUIEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
-import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.adapter.HomeAdapter;
@@ -35,6 +35,8 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
 
     private List<AbsBaseEntity> mEntities = new ArrayList<>();
 
+    private HomeAdapter homeAdapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,8 +53,8 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     public void intData(){
         BannerEntity bannerEntity = new BannerEntity();
         bannerEntity.parseData();
-        MenuEntrty menuEntrty = new MenuEntrty();
-        menuEntrty.parseData();
+        MenuEntity menuEntity = new MenuEntity();
+        menuEntity.parseData();
         JavaEntity javaEntity = new JavaEntity();
         javaEntity.parseData();
         AndroidUIEntity androidUIEntity = new AndroidUIEntity();
@@ -62,7 +64,7 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         MyViewEntity myViewEntity = new MyViewEntity();
         myViewEntity.parseData();
         mEntities.add(bannerEntity);
-        mEntities.add(menuEntrty);
+        mEntities.add(menuEntity);
         mEntities.add(javaEntity);
         mEntities.add(androidUIEntity);
         mEntities.add(recyclerViewEntity);
@@ -70,29 +72,33 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     }
 
     public void initView () {
-
         mSwipeRefreshLayout = (SwipeRefreshLayout) getActivity().findViewById(R.id.swipe_refresh_layout);
+        //★1.设置刷新时动画的颜色，可以设置4个
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary,
                 R.color.blueLight,
                 R.color.btn_cm_bg_pressed,
                 R.color.withe);
+        //★2.设置刷新监听事件
         mSwipeRefreshLayout.setOnRefreshListener(this);
-        HomeAdapter homeAdapter = new HomeAdapter(getActivity(), mEntities);
+        //RecyclerView简单步骤
+        homeAdapter = new HomeAdapter(getActivity(), mEntities);
         mRecyclerView = (RecyclerView) getActivity().findViewById(R.id.lv_home_listview);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(homeAdapter);
     }
 
-
     @Override
     public void onRefresh() {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                mSwipeRefreshLayout.setRefreshing(false);
                 mEntities.clear();
                 intData();
+                //★3.通知recycleView改变了数据
+                homeAdapter.notifyDataSetChanged();
+                //★4.记得关闭刷新，否则刷新球一直在转
+                mSwipeRefreshLayout.setRefreshing(false);
             }
         }, 50);
     }

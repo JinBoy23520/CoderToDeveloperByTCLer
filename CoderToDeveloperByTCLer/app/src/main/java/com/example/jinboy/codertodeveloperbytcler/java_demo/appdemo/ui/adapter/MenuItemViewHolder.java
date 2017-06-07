@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
-import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.AndroidUIActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.JavaDemoActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.MyViewActivity;
@@ -23,7 +23,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.RecyclerV
  * Created by 坚果-王健(wangjian3@kuyumall.com) on 2016/12/1.
  */
 
-public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntrty> {
+public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntity> {
     private LinearLayout mContainerLl;
 
     MenuItemViewHolder(Context context, View itemView) {
@@ -32,7 +32,7 @@ public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntrty> {
     }
 
     @Override
-    public void onBindViewHolder(MenuEntrty entity) {
+    public void onBindViewHolder(MenuEntity entity) {
 
         mContainerLl.removeAllViews();
 
@@ -44,12 +44,12 @@ public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntrty> {
 
 
         for (int index = 0, len = entity.getmItemEntities().size(); index < len; index ++) {
-            MenuEntrty.MenuItemEntity itemEntity = entity.getmItemEntities().get(index);
+            MenuEntity.MenuItemEntity itemEntity = entity.getmItemEntities().get(index);
             autoAddMenuItemView(entity, itemWidth, itemEntity.getImgId(), itemEntity.getTitle());
         }
     }
 
-    private  void autoAddMenuItemView(final MenuEntrty entity, float width, int imageResId, String textResId) {
+    private  void autoAddMenuItemView(final MenuEntity entity, float width, int imageResId, String textResId) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.home_menu_item, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.iv_home_menu);
         TextView textView = (TextView) view.findViewById(R.id.tv_home_menu);

@@ -10,7 +10,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AbsBa
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.AndroidUIEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
-import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntrty;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 
@@ -31,9 +31,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context context;
     //布局标识集合
     private final List<AbsBaseEntity> typeList;
-
     private LayoutInflater mInflater;
-
     //设置两个常量
     private final int TYPE_BANNER = 0;        //广告位
     private final int TYPE_MENU = 1;          //菜单
@@ -53,7 +51,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         AbsBaseEntity entity = typeList.get(position);
         if (entity instanceof BannerEntity) {
             return TYPE_BANNER;
-        } else if (entity instanceof MenuEntrty) {
+        } else if (entity instanceof MenuEntity) {
             return TYPE_MENU;
         } else if (entity instanceof JavaEntity) {
             return TYPE_JAVA;
@@ -63,16 +61,11 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             return TYPE_RECYCLERVIEW;
         } else if (entity instanceof MyViewEntity) {
             return TYPE_MYVIEW;
-//        } else if (entity instanceof YuqingEntity) {
-//            return  TYPE_YUQING;
-//        } else if (entity instanceof FinanceHomeEntity) {
-//            return TYPE_FINANCE;
         } else {
             return 0;
         }
 
     }
-
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -92,12 +85,6 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             case TYPE_MYVIEW:  //自定义View
                 return new MyViewItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
-//
-//                case TYPE_YUQING:    //舆情
-//                    return new YuqingItemViewHolder(mContext, mInflater.inflate(R.layout.home_yuqing_item, parent, false));
-//
-//                case TYPE_FINANCE:  //财务
-//                    return new FinanceItemViewHolder(mContext, mInflater.inflate(R.layout.home_finance_item, parent, false));
         }
         return null;
     }

@@ -23,11 +23,10 @@ abstract class BaseItemViewHolder<T extends AbsBaseEntity> extends RecyclerView.
     private View mHeadLineV;
     /** 模块名 */
     private TextView mHeadNameTv;
-    /** 时间段 */
+    /** 时间段  后期可能会换名称*/
     private TextView mHeadTimeTv;
     /**头部view*/
     private LinearLayout mHeadContainerLl;
-
 
     BaseItemViewHolder(Context context, View itemView) {
         super(itemView);
@@ -64,7 +63,5 @@ abstract class BaseItemViewHolder<T extends AbsBaseEntity> extends RecyclerView.
      * @param entity T
      */
     void onHeadViewClick(T entity){
-
     }
-
 }

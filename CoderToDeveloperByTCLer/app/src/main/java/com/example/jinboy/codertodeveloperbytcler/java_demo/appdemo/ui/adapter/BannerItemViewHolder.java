@@ -46,7 +46,6 @@ public class BannerItemViewHolder extends BaseItemViewHolder<BannerEntity> {
         mViewPagerInViewPager.addOnPageChangeListener(new GuidePageChangeListener(mImageViews));
     }
 
-
     /**
      * <li>初始化广告切换指引view</li>
      */
