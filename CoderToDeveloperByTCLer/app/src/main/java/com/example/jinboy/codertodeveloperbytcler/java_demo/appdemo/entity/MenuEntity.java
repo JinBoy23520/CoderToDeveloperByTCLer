@@ -37,8 +37,8 @@ public class MenuEntity extends AbsBaseEntity {
         menuItemEntity1.setImgId(R.drawable.ui_img);
         mItemEntities.add(menuItemEntity1);
         MenuItemEntity menuItemEntity2 = new MenuItemEntity();
-        menuItemEntity2.setTitle("RecyclerView");
-        menuItemEntity2.setImgId(R.drawable.recyclerview_img);
+        menuItemEntity2.setTitle("Android 基础");
+        menuItemEntity2.setImgId(R.drawable.android_img);
         mItemEntities.add(menuItemEntity2);
         MenuItemEntity menuItemEntity3 = new MenuItemEntity();
         menuItemEntity3.setTitle("MyView");

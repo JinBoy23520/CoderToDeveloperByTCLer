@@ -31,7 +31,9 @@
         <activity android:name=".ui.JavaDemoActivity" />
         <activity android:name=".ui.AndroidUIActivity" />
         <activity android:name=".ui.MyViewActivity" />
-        <activity android:name=".ui.RecyclerViewActivity"></activity>
+        <activity android:name=".ui.RecyclerViewActivity" />
+        <activity android:name=".ui.AndroidDemoActivity" />
+        <activity android:name=".ui.androiddemo.FileOperationsActivity"></activity>
     </application>
 
 </manifest>
