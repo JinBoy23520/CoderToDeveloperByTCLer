@@ -12,6 +12,18 @@ import java.io.IOException;
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/06/11
  *     desc   : 文件协助类
+ *              1.文件操作模式：
+ *              1.Context.MODE_PRIVATE：私有操作模式，默认模式，代表该文件是私有数据，只能被应用本身访问，
+ *              在该模式下，写入的内容会覆盖源文件的内容，如果想把新写入的内容追加到原文件中，可以使用Context.MODE_APPEND
+                2.Context.MODE_APPEND：追加操作模式：模式会检查文件是否存在，存在就往文件追加内容，否则就创建新文件
+                3.Context.MODE_WORLD_READABLE：表示当前文件可以被其他应用读取。
+                4.Context.MODE_WORLD_WRITEABLE：表示当前文件可以被其他应用写入。
+                如果希望文件被其他应用读和写，可以传入：
+                openFileOutput("1234.txt", Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE);
+                另外，文件默认放在/data/data//files目录下
+                对于文件的获取，Android中提供了getCacheDir()和getFilesDir()方法：
+                getCacheDir()方法用于获取/data/data//cache目录
+                getFilesDir()方法用于获取/data/data//files目录
  *     version: 1.0
  * </pre>
  */

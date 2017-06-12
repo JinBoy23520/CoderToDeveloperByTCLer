@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.FileOperationsActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SDcardOperationsActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SharedPreferenceActivity;
 
 public class AndroidDemoActivity extends Activity implements View.OnClickListener {
     private Button button1,button2,button3;
@@ -30,15 +32,15 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
             case R.id.button1:
                 Intent intent = new Intent(this,FileOperationsActivity.class);
                 startActivity(intent);
-//                break;
-//            case R.id.button2:
-//                Intent intent1 = new Intent(this,HttpURLConnectionActivity.class);
-//                startActivity(intent1);
-//                break;
-//            case R.id.button3:
-//                Intent intent2 = new Intent(this,HttpURLConnectionActivity.class);
-//                startActivity(intent2);
-//                break;
+                break;
+            case R.id.button2:
+                Intent intent1 = new Intent(this,SDcardOperationsActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.button3:
+                Intent intent2 = new Intent(this,SharedPreferenceActivity.class);
+                startActivity(intent2);
+                break;
         }
     }
 }

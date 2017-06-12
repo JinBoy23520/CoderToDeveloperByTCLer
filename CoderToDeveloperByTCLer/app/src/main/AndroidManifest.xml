@@ -3,6 +3,10 @@
     package="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +37,9 @@
         <activity android:name=".ui.MyViewActivity" />
         <activity android:name=".ui.RecyclerViewActivity" />
         <activity android:name=".ui.AndroidDemoActivity" />
-        <activity android:name=".ui.androiddemo.FileOperationsActivity"></activity>
+        <activity android:name=".ui.androiddemo.FileOperationsActivity" />
+        <activity android:name=".ui.androiddemo.SDcardOperationsActivity" />
+        <activity android:name=".ui.androiddemo.SharedPreferenceActivity"></activity>
     </application>
 
 </manifest>

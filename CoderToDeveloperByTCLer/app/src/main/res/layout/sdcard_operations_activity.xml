@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SDcardOperationsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清输入文件名" />
+
+    <EditText
+        android:id="@+id/edittitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="文件名" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清输入文件内容" />
+
+    <EditText
+        android:id="@+id/editdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="文件内容" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存到SD卡" />
+
+    <Button
+        android:id="@+id/btnclean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空" />
+
+    <Button
+        android:id="@+id/btnread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取sd卡中的文件" />
+
+</LinearLayout>
