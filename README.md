@@ -32,4 +32,7 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [Android 存储（本地存储 SD卡存储 SharedPreference SQLite ContentProvider）](http://blog.csdn.net/dt235201314/article/details/73176149 "鼠标悬停显示")
 <br>
+<br>
+[玩家信息管理（SQLite+Fragment加强））](http://blog.csdn.net/dt235201314/article/details/50463194 "鼠标悬停显示")
+<br>
 
