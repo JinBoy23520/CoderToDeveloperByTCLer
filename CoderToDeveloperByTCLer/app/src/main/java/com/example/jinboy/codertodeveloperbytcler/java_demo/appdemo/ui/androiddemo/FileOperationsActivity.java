@@ -48,6 +48,7 @@ public class FileOperationsActivity extends AppCompatActivity implements View.On
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnclean:
+//                deleteFile(editname.getText().toString());
                 editdetail.setText("");
                 editname.setText("");
                 break;

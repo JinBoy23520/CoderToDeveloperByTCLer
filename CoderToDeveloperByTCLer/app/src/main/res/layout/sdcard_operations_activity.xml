@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="清输入文件名" />
+        android:text="请输入文件名" />
 
     <EditText
         android:id="@+id/edittitle"
@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="清输入文件内容" />
+        android:text="请输入文件内容" />
 
     <EditText
         android:id="@+id/editdetail"

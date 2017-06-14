@@ -13,6 +13,7 @@ import java.util.Map;
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/06/12
  *     desc   : SharedPreferences数据存储协助类
+ *              map键值对形式保存文件
  *     version: 1.0
  * </pre>
  */
