@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/handler_demo_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.HandlerDemoActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!" />
+
+            <ImageView
+                android:id="@+id/id_img"
+                android:layout_width="wrap_content"
+                android:layout_height="300px"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:id="@+id/id_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="非UI线程更新UI的问题崩溃测试"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/id_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handler.post(Runnable)更新UI"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/id_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handler.postDelayed(Runnable, DelayTime)定时执行相关动作"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/id_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handler.removeCallbacks(Thread)"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/id_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义Handler和Message"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/id_btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="intercept Handler Message(拦截消息)"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/id_btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在子线程中实例化Handler,异常崩溃测试"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/id_btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义一个与线程相关的Handler"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/id_btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handler异步消息处理（HandlerThread）"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

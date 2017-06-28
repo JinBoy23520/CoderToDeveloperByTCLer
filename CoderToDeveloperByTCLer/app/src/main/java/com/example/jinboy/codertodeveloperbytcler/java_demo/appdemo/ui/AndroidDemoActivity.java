@@ -8,11 +8,12 @@ import android.widget.Button;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.FileOperationsActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.HandlerDemoActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SDcardOperationsActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SharedPreferenceActivity;
 
 public class AndroidDemoActivity extends Activity implements View.OnClickListener {
-    private Button button1,button2,button3;
+    private Button button1,button2,button3,button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,11 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button1 = (Button)findViewById(R.id.button1);
         button2 = (Button)findViewById(R.id.button2);
         button3 = (Button)findViewById(R.id.button3);
+        button4 = (Button)findViewById(R.id.button4);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +43,10 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
             case R.id.button3:
                 Intent intent2 = new Intent(this,SharedPreferenceActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.button4:
+                Intent intent3 = new Intent(this,HandlerDemoActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

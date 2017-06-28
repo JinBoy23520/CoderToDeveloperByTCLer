@@ -33,5 +33,12 @@
         android:layout_below="@+id/button2"
         android:text="SharedPreference保存用户信息Demo"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:text="Handler线程通信Demo"/>
+
 
 </RelativeLayout>

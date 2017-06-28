@@ -40,7 +40,10 @@
         <activity android:name=".ui.androiddemo.FileOperationsActivity" />
         <activity android:name=".ui.androiddemo.SDcardOperationsActivity" />
         <activity android:name=".ui.androiddemo.SharedPreferenceActivity" />
-        <activity android:name=".ui.androidui.UIActivity"></activity>
+        <activity android:name=".ui.androidui.UIActivity" />
+        <activity android:name=".ui.androiddemo.HandlerActivity" />
+        <activity android:name=".ui.androiddemo.HandlerThreadActivity" />
+        <activity android:name=".ui.androiddemo.HandlerDemoActivity"></activity>
     </application>
 
 </manifest>

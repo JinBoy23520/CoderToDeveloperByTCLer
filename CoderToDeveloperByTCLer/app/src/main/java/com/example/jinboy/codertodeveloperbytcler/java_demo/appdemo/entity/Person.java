@@ -7,8 +7,15 @@ package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity;
 public class Person {
     Integer id;
     String name;
-    Short age;
+    int age;
 
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person() {
+    }
     public Integer getId() {
         return id;
     }
@@ -25,7 +32,7 @@ public class Person {
         this.name = name;
     }
 
-    public Short getAge() {
+    public int getAge() {
         return age;
     }
 
