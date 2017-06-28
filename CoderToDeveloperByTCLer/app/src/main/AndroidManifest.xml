@@ -39,7 +39,8 @@
         <activity android:name=".ui.AndroidDemoActivity" />
         <activity android:name=".ui.androiddemo.FileOperationsActivity" />
         <activity android:name=".ui.androiddemo.SDcardOperationsActivity" />
-        <activity android:name=".ui.androiddemo.SharedPreferenceActivity"></activity>
+        <activity android:name=".ui.androiddemo.SharedPreferenceActivity" />
+        <activity android:name=".ui.androidui.UIActivity"></activity>
     </application>
 
 </manifest>

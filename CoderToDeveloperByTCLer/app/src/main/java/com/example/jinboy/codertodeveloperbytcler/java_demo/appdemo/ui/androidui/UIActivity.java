@@ -1,13 +1,17 @@
-package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui;
+package com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androidui;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.FileHelper;
 
-public class AndroidUIActivity extends Activity implements View.OnClickListener{
+import java.io.IOException;
+
+public class UIActivity extends Activity implements View.OnClickListener{
 
     private Button button1;
 
