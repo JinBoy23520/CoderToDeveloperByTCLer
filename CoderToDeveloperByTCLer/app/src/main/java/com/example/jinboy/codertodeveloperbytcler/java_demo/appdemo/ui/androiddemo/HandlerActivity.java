@@ -10,11 +10,10 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 
 public class HandlerActivity extends AppCompatActivity {
     private MyThread myThread;
-
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
-            System.out.println("UI :"+ Thread.currentThread());
+            System.out.println("UI ==:"+ Thread.currentThread());
         }
     };
 
@@ -23,14 +22,12 @@ public class HandlerActivity extends AppCompatActivity {
         @Override
         public void run() {
             Looper.prepare();
-
             handler= new Handler(){
                 @Override
                 public void handleMessage(Message msg) {
-                    System.out.println("currentThread:"+ Thread.currentThread());
+                    System.out.println("currentThread:=="+ Thread.currentThread());
                 }
             };
-
             Looper.loop();
         }
     }

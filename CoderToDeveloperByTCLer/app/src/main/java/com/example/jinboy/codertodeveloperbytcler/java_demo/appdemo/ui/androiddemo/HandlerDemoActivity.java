@@ -25,7 +25,6 @@ public class HandlerDemoActivity extends Activity implements View.OnClickListene
 
     private  int images[]= {R.drawable.android_img,R.drawable.java_img,R.drawable.view_img};
     private int index=0;
-    Handler handler = new Handler();
 
     Handler customHander = new Handler() {
         @Override
@@ -49,6 +48,7 @@ public class HandlerDemoActivity extends Activity implements View.OnClickListene
         }
     };
 
+    Handler handler = new Handler();
     Thread myThread = new Thread(){
         @Override
         public void run() {
@@ -129,7 +129,6 @@ public class HandlerDemoActivity extends Activity implements View.OnClickListene
                         }
                     }
                 }.start();
-
                 break;
             case R.id.id_btn3:
                 handler.postDelayed(myThread,1000);

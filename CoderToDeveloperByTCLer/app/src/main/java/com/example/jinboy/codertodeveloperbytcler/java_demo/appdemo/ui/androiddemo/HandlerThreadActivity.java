@@ -22,7 +22,7 @@ public class HandlerThreadActivity extends AppCompatActivity implements View.OnC
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            System.out.println("UI thread>" + Thread.currentThread());
+            System.out.println("UI thread==>" + Thread.currentThread());
             // 给主线程发送消息
             Message message = new Message();
             message.what =1;
@@ -44,7 +44,7 @@ public class HandlerThreadActivity extends AppCompatActivity implements View.OnC
             @Override
             public void handleMessage(Message msg) {
                 // 处理耗时操作
-                System.out.println("current thread>" + Thread.currentThread());
+                System.out.println("current thread==>" + Thread.currentThread());
                 // 给主线程发送消息
                 Message message = new Message();
                 message.what =1;
