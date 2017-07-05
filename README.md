@@ -36,4 +36,7 @@ TCL雏鹰飞翔计划 · Android 篇
 [玩家信息管理（SQLite+Fragment加强））](http://blog.csdn.net/dt235201314/article/details/50463194 "鼠标悬停显示")
 <br>
 <br>
+[Android通信模块（单线程，多线程通信方式，Handler 与UI Thread的交互，Handler接合子线程的使用）](http://blog.csdn.net/dt235201314/article/details/73823653 "鼠标悬停显示")
+<br>
+<br>
 <br>
