@@ -10,11 +10,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.RecyclerViewActivity">
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="暂无Demo"/>
+        android:text="上拉加载下拉刷新"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_below="@+id/button1"-->
+        <!--android:text="SDcard文件操作Demo"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_below="@+id/button2"-->
+        <!--android:text="SharedPreference保存用户信息Demo"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/button4"-->
+        <!--android:layout_below="@+id/button3"-->
+        <!--android:text="Handler线程通信Demo"/>-->
 
 
 </RelativeLayout>
