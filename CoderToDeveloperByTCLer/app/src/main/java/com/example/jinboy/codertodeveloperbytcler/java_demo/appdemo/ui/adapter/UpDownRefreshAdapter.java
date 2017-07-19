@@ -32,13 +32,17 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
     private FirstFragment firstFragment;
     private List<RecyclerEntity> records;
     boolean isNeedSetBgColor = true;
-    boolean isGone = true ;
+    boolean isGone = false ;
+
+    public void setGone(boolean gone) {
+        isGone = gone;
+    }
+
     private DecimalFormat mFormat;
 
-    public UpDownRefreshAdapter(FirstFragment firstFragment, List<RecyclerEntity> records,boolean isGone ) {
+    public UpDownRefreshAdapter(FirstFragment firstFragment, List<RecyclerEntity> records ) {
         this.firstFragment = firstFragment;
         this.records = records;
-        this.isGone = isGone;
         mFormat = new DecimalFormat("#,###.##");
     }
 
