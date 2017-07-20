@@ -31,7 +31,4 @@
 
     </LinearLayout>
 
-    <View
-        style="@style/view_bg1"/>
-
 </LinearLayout>

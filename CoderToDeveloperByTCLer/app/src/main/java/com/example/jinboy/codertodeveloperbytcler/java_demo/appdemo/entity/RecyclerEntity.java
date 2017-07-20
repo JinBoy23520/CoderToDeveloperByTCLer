@@ -9,7 +9,7 @@ import java.util.Random;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/07/07
- *     desc   :
+ *     desc   : RecyclerView返回数据实体类
  *     version: 1.0
  * </pre>
  */

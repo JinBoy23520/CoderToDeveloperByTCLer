@@ -30,7 +30,7 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView recyclerView;
     private View view;
-    boolean isLoading;
+    boolean isLoading = true;
 
     /**
      * 当前页
@@ -42,7 +42,7 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
      */
     private int pages = 4;
 
-    private List<RecyclerEntity> records;
+    private List<RecyclerEntity> records = new ArrayList<>();
 
     boolean isFirst = true;
     private UpDownRefreshAdapter upDownRefreshAdapter;
@@ -62,8 +62,8 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_layout);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
-        getEntity();
         recyclerView.setLayoutManager(layoutManager);
+        getEntity();
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary,
                 R.color.blueLight,
                 R.color.btn_cm_bg_pressed,
@@ -102,17 +102,16 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
 
         if(isFirst){
             current = 1;
-            records = recyclerEntity.parseData(current,"全部");
+            records.clear();
+            records.addAll( recyclerEntity.parseData(current,"全部"));
+            upDownRefreshAdapter= new UpDownRefreshAdapter(this,records);
+            recyclerView.setAdapter(upDownRefreshAdapter);
         }else{
-            List list = new ArrayList();
-            list.addAll(records);
-            list.addAll(recyclerEntity.parseData(current,"全部"));
-            records = list;
+            records.addAll(recyclerEntity.parseData(current,"全部"));
+            upDownRefreshAdapter.notifyDataSetChanged();
             }
-
         isLoading = (Integer.valueOf(pages) > Integer.valueOf(current));
-        upDownRefreshAdapter= new UpDownRefreshAdapter(this,records,!isLoading);
-        recyclerView.setAdapter(upDownRefreshAdapter);
+        upDownRefreshAdapter.setGone(!isLoading);
         addScrollListener();
         mSwipeRefreshLayout.setRefreshing(false);
     }
