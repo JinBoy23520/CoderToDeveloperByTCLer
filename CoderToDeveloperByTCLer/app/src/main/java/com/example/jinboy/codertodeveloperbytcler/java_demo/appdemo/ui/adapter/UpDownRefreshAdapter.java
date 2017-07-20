@@ -133,9 +133,6 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
         }
     }
 
-
-
-
     static class ItemViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tv_category,tv_page,tv_sales;
