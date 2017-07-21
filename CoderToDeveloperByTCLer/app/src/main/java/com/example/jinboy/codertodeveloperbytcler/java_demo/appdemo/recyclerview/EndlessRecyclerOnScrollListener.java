@@ -24,7 +24,6 @@ public abstract class EndlessRecyclerOnScrollListener extends
     @Override
     public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
         super.onScrolled(recyclerView, dx, dy);
-
         visibleItemCount = recyclerView.getChildCount();
         totalItemCount = recyclerView.getLayoutManager().getItemCount();
         LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();

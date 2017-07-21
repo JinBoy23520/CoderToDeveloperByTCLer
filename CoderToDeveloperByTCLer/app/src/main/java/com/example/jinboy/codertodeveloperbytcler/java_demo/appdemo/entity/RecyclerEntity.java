@@ -9,7 +9,7 @@ import java.util.Random;
  *     author : JinBiao
  *     CSDN : http://my.csdn.net/DT235201314
  *     time   : 2017/07/07
- *     desc   :
+ *     desc   : RecyclerView数据填充类
  *     version: 1.0
  * </pre>
  */
@@ -21,11 +21,8 @@ public class RecyclerEntity extends AbsBaseEntity {
     private int sales; //销量
     private int allPage = 5;
 
-
-
     @Override
     public void parseData() {
-
     }
 
     public List<RecyclerEntity> parseData(int pages , String category ) {

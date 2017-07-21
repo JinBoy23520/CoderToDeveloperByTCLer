@@ -58,7 +58,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
     public void intView() {
-
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_layout);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
@@ -91,7 +90,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
                             getEntity();
                         }
                     }, 500);
-
                 }
             }
         };
@@ -99,7 +97,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
     public void getEntity() {
-
         if(isFirst){
             current = 1;
             records = recyclerEntity.parseData(current,"全部");
@@ -109,7 +106,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
             list.addAll(recyclerEntity.parseData(current,"全部"));
             records = list;
             }
-
         isLoading = (Integer.valueOf(pages) > Integer.valueOf(current));
         upDownRefreshAdapter= new UpDownRefreshAdapter(this,records,!isLoading);
         recyclerView.setAdapter(upDownRefreshAdapter);
@@ -123,5 +119,4 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
         getEntity();
         mSwipeRefreshLayout.setRefreshing(false);
     }
-
 }

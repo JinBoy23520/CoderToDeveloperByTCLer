@@ -35,6 +35,12 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
     boolean isGone = true ;
     private DecimalFormat mFormat;
 
+    /**
+     * 构造方法，把用到的值带过来，数据，可控制尾部加载提醒是否显示
+     * @param firstFragment
+     * @param records
+     * @param isGone
+     */
     public UpDownRefreshAdapter(FirstFragment firstFragment, List<RecyclerEntity> records,boolean isGone ) {
         this.firstFragment = firstFragment;
         this.records = records;
@@ -71,6 +77,12 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
         }
     }
 
+    /**
+     * 绑定数据显示栏和尾部提醒加载栏的布局
+     * @param parent
+     * @param viewType
+     * @return
+     */
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (viewType == TYPE_ITEM) {
@@ -85,6 +97,11 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
         return null;
     }
 
+    /**
+     * 设置显示数据处理，控制布局背景等，底部提醒是否显示
+     * @param holder
+     * @param position
+     */
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
 
@@ -128,9 +145,6 @@ public class UpDownRefreshAdapter extends RecyclerView.Adapter<RecyclerView.View
             }
         }
     }
-
-
-
 
     static class ItemViewHolder extends RecyclerView.ViewHolder {
 
