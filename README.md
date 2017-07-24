@@ -42,4 +42,3 @@ TCL雏鹰飞翔计划 · Android 篇
 [SwipeRefreshLayout + RecyclerView 实现上拉加载下拉刷新](http://blog.csdn.net/dt235201314/article/details/75305222 "鼠标悬停显示")
 <br>
 <br>
-<br>
