@@ -23,7 +23,6 @@ import java.util.List;
  *  SwipeRefreshLayout+RecyclerView实现下拉刷新上拉自动加载
  */
 public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
-
     /**
      * 下拉刷新view
      */
@@ -31,23 +30,19 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     private RecyclerView recyclerView;
     private View view;
     boolean isLoading = true;
-
     /**
      * 当前页
      */
     private int current;
-
     /**
      * 总页数
      */
     private int pages = 4;
-
     private List<RecyclerEntity> records = new ArrayList<>();
-
     boolean isFirst = true;
     private UpDownRefreshAdapter upDownRefreshAdapter;
-
     private RecyclerEntity recyclerEntity = new RecyclerEntity();
+    private EndlessRecyclerOnScrollListener mOnScrollListener;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -73,7 +68,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
 
-    private EndlessRecyclerOnScrollListener mOnScrollListener;
 
     private void addScrollListener () {
         if (mOnScrollListener != null) {
@@ -99,7 +93,6 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
     public void getEntity() {
-
         if(isFirst){
             current = 1;
             records.clear();
@@ -122,5 +115,4 @@ public class FirstFragment extends Fragment implements SwipeRefreshLayout.OnRefr
         getEntity();
         mSwipeRefreshLayout.setRefreshing(false);
     }
-
 }
