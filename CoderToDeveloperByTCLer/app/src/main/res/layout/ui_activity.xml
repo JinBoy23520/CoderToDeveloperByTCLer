@@ -9,9 +9,9 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/ui_button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TabLayout实现单选全选"/>
+        android:text="TabLayout实现筛选，单选全选"/>
 
 </RelativeLayout>

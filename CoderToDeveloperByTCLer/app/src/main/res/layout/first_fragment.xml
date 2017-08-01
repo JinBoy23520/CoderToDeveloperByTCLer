@@ -5,6 +5,17 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_loading"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="6dp"
+        app:tabPaddingStart="12dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
