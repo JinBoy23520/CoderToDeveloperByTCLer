@@ -13,7 +13,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".ui.java.CollectionEnumgGnericsActivity" />
         <activity
             android:name=".ui.java.HttpURLConnectionActivity"
@@ -22,8 +22,7 @@
             android:name=".ui.WebViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".ui.HomeActivity">
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
