@@ -320,7 +320,6 @@ public class MyOneLineView extends LinearLayout {
         return this;
     }
 
-
     /**
      * 设置右边文字颜色
      *
@@ -373,7 +372,6 @@ public class MyOneLineView extends LinearLayout {
         return ivRightIcon;
     }
 
-
     /**
      * 设置中间的输入框显示与否
      *
@@ -389,7 +387,6 @@ public class MyOneLineView extends LinearLayout {
         return this;
     }
 
-
     /**
      * 设置中间的输入框 是否可输入
      *
@@ -400,7 +397,6 @@ public class MyOneLineView extends LinearLayout {
         editContent.setFocusable(editable);
         return this;
     }
-
 
     /**
      * 设置中间的输入框hint内容
@@ -434,7 +430,6 @@ public class MyOneLineView extends LinearLayout {
         return String.valueOf(editContent.getText());
 
     }
-
 
     /**
      * 设置 edit 颜色
@@ -481,5 +476,4 @@ public class MyOneLineView extends LinearLayout {
         });
         return this;
     }
-
 }
