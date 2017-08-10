@@ -45,3 +45,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [Android UI 之 TabLayout动态添加tab实现筛选及自动偏移（全选，单选）](http://blog.csdn.net/dt235201314/article/details/76528029 "鼠标悬停显示")
 <br>
+<br>
+[Android UI 之 我的页面 圆形图片+通用item封装（简化代码量）](http://blog.csdn.net/dt235201314/article/details/76885747 "鼠标悬停显示")
+<br>
