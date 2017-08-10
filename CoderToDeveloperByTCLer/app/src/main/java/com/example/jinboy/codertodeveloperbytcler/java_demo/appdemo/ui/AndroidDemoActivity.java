@@ -11,10 +11,12 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androidde
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.HandlerDemoActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SDcardOperationsActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.SharedPreferenceActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.TitleView;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 public class AndroidDemoActivity extends Activity implements View.OnClickListener {
     private Button button1,button2,button3,button4;
-
+    private TitleView title_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,9 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button2 = (Button)findViewById(R.id.button2);
         button3 = (Button)findViewById(R.id.button3);
         button4 = (Button)findViewById(R.id.button4);
+        title_view = (TitleView) findViewById(R.id.title_view);
+        title_view.setLeftToBack(this);
+        StatusBarUtil.setColor(this,0xffffff,0);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);

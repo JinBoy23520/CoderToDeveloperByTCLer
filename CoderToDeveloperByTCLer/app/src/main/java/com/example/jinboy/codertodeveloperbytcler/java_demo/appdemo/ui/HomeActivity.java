@@ -11,6 +11,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.fragment.
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.fragment.MineFragment;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CustomViewPager;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.TabContainerView;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
 
@@ -44,6 +45,8 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
         initViews();
+        StatusBarUtil.setTranslucentForImageView(HomeActivity.this, 0, null);
+//        StatusBarUtil.setTranslucentForImageViewInFragment(HomeActivity.this, null);
     }
 
     public void initViews() {

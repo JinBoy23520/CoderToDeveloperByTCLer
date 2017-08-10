@@ -15,10 +15,17 @@
 
     </android.support.design.widget.CoordinatorLayout>
 
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:background="@color/title_colcor"/>
+
     <TextView
         android:id="@+id/title_home"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_bar_height"
+        android:layout_below="@+id/fake_status_bar"
         android:textSize="18sp"
         android:gravity="center"
         android:background="@color/title_colcor"

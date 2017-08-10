@@ -7,6 +7,7 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/ll_mine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -26,8 +27,9 @@
                 android:id="@+id/iv_mine_avatar"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_below="@+id/title_bar"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/mine_me"/>
 
@@ -65,9 +67,16 @@
 
             </LinearLayout>
 
+            <View
+                android:id="@+id/fake_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusbar_view_height"
+                android:background="@android:color/transparent"/>
+
             <TextView
                 android:id="@+id/title_bar"
                 android:layout_width="match_parent"
+                android:layout_below="@+id/fake_status_bar"
                 android:layout_height="@dimen/title_bar_height"
                 android:textColor="@color/black33"
                 android:text="我的"

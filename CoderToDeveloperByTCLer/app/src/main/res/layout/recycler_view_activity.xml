@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="上拉加载下拉刷新"
+        style="@style/btn_common"
         android:id="@+id/button1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

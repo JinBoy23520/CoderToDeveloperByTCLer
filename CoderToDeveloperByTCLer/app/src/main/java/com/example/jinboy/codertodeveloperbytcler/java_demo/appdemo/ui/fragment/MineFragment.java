@@ -11,8 +11,10 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.HomeActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.WebViewActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.MyOneLineView;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 
 /**
@@ -31,6 +33,7 @@ public class MineFragment extends Fragment implements MyOneLineView.OnRootClickL
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         initView();
+//        StatusBarUtil.setTranslucentForImageView(getActivity(),0 ,getActivity().findViewById(R.id.ll_mine));
     }
 
     public void initView(){

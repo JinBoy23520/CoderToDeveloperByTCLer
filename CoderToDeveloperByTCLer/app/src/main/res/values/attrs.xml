@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题属性 -->
+    <declare-styleable name="TitleAttr">
+        <attr name="title_name" format="reference|string" />
+        <attr name="title_color" format="color" />
+        <attr name="title_left_text" format="reference|string" />
+        <attr name="title_left_text_color" format="color" />
+        <attr name="title_left_image" format="reference" />
+        <attr name="title_right_visiable" format="boolean" />
+        <attr name="title_name_gravity">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="title_left_back" format="boolean" />
+        <attr name="title_right_image" format="reference" />
+        <attr name="title_right_text" format="reference|string" />
+        <attr name="title_right_text_color" format="color" />
+        <attr name="title_right_image_two" format="reference" />
+        <attr name="title_right_text_two" format="reference|string" />
+        <attr name="title_height" format="dimension" />
+        <attr name="title_right_text_drawable_right" format="reference" />
+        <attr name="title_right_text_drawable_left" format="reference" />
+        <attr name="title_right_text_two_drawable_right" format="reference" />
+        <attr name="title_right_text_two_drawable_left" format="reference" />
+        <attr name="title_left_text_drawable_right" format="reference" />
+        <attr name="title_left_text_drawable_left" format="reference" />
+    </declare-styleable>
+
+    <!-- 设置圆角 -->
+    <declare-styleable name="roundConner">
+        <attr name="round" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimProgressView">
+        <attr name="borderColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="horizontalPadding" format="dimension" />
+        <attr name="verticalPading" format="dimension" />
+        <attr name="bordWidth" format="dimension" />
+        <attr name="duringMillis" format="integer" />
+    </declare-styleable>
+
+    <!--自动适应改变大小的文字空间-->
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+</resources>

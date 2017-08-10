@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/android_demo_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.AndroidDemoActivity">
+
+    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_left_text=""
+        app:title_left_text_drawable_left="@mipmap/blue_back_icon"
+        app:title_name="Android基础"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/btn_common"
         android:text="Android文件操作Demo"
         android:id="@+id/button1"
         android:layout_alignParentTop="true"
@@ -22,6 +29,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/btn_common"
         android:id="@+id/button2"
         android:layout_below="@+id/button1"
         android:text="SDcard文件操作Demo"/>
@@ -29,6 +37,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/btn_common"
         android:id="@+id/button3"
         android:layout_below="@+id/button2"
         android:text="SharedPreference保存用户信息Demo"/>
@@ -37,8 +46,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button4"
+        style="@style/btn_common"
         android:layout_below="@+id/button3"
         android:text="Handler线程通信Demo"/>
 
 
-</RelativeLayout>
+</LinearLayout>
