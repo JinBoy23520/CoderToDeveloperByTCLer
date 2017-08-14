@@ -26,8 +26,8 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button3 = (Button)findViewById(R.id.button3);
         button4 = (Button)findViewById(R.id.button4);
         title_view = (TitleView) findViewById(R.id.title_view);
+        title_view.setContainerBackgroundColor(this,R.color.gray2,0xffefefef);
         title_view.setLeftToBack(this);
-        StatusBarUtil.setColor(this,0xffffff,0);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);

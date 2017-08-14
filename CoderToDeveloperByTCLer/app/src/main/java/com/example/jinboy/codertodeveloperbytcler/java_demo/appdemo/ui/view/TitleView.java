@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
-
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 
 /**
@@ -394,4 +394,13 @@ public class TitleView extends RelativeLayout {
 		mContainer.findViewById(R.id.title_bar).setBackgroundColor(getResources().getColor(color));
 	}
 
+	/**
+	 * 设置标题栏颜色,状态栏颜色
+	 * @param color1
+	 * @param color2
+	 */
+	public void setContainerBackgroundColor(Activity activity,int color1,int color2) {
+		mContainer.findViewById(R.id.title_bar).setBackgroundColor(getResources().getColor(color1));
+		StatusBarUtil.setColor(activity,color2,0);
+	}
 }
