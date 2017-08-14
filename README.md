@@ -48,5 +48,5 @@ TCL雏鹰飞翔计划 · Android 篇
 [Android UI 之 我的页面 圆形图片+通用item封装（简化代码量）](http://blog.csdn.net/dt235201314/article/details/76885747 "鼠标悬停显示")
 <br>
 <br>
-[Android UI 之自定义标题栏 + 沉浸式状态栏](http://blog.csdn.net/dt235201314/article/details/77161904 "鼠标悬停显示")
+[Android UI 之自定义标题栏 + 沉浸式状态栏](http://blog.csdn.net/dt235201314/article/details/77161904 "")
 <br>
