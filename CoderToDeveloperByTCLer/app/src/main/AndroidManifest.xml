@@ -21,8 +21,7 @@
         <activity
             android:name=".ui.WebViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ui.HomeActivity">
+        <activity android:name=".ui.HomeActivity">
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +41,8 @@
         <activity android:name=".ui.androiddemo.HandlerActivity" />
         <activity android:name=".ui.androiddemo.HandlerThreadActivity" />
         <activity android:name=".ui.androiddemo.HandlerDemoActivity" />
-        <activity android:name=".ui.recyclerview.SwipeRefreshRecyclerViewActivity"></activity>
+        <activity android:name=".ui.recyclerview.SwipeRefreshRecyclerViewActivity" />
+        <activity android:name=".ui.MapViewActivity"></activity>
     </application>
 
 </manifest>
