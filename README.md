@@ -51,3 +51,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [Android UI 之自定义标题栏 + 沉浸式状态栏](http://blog.csdn.net/dt235201314/article/details/77161904 "")
 <br>
+<br>
+[Android 自定义View之中国地图热点区域分布](http://blog.csdn.net/dt235201314/article/details/78133932 "")
+<br>
