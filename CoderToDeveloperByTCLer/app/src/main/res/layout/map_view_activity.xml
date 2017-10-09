@@ -7,20 +7,44 @@
     android:orientation="vertical"
     tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.MyViewActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@color/black33"
-        android:text="地图区域热点替代方案："/>
-
-    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.MapView
-        android:id="@+id/mapview"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp">
-    </com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.MapView>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black33"
+                android:text="地图区域热点替代方案："/>
 
+            <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.MapView
+                android:id="@+id/mapview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+            </com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.MapView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black33"
+                android:text="Android地图省份区域实现："/>
+
+            <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.ChinaMapView
+                android:id="@+id/vp"
+                android:background="#FFFF6F"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="250dp"/>
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
