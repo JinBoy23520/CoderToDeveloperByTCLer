@@ -54,3 +54,6 @@ Android从初级到中级开发工程师的学习计划及文章demo整理
 <br>
 [Android 自定义View之中国地图热点区域分布](http://blog.csdn.net/dt235201314/article/details/78133932 "")
 <br>
+<br>
+[ Android 绘制中国地图及热点省份分布](http://blog.csdn.net/dt235201314/article/details/78190492 "")
+<br>
