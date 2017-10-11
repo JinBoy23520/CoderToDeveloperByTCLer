@@ -19,4 +19,11 @@
         style="@style/btn_common"
         android:text="地图热点分布替代方案"/>
 
+    <Button
+        android:id="@+id/my_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_common"
+        android:text="中国地图热点分布"/>
+
 </LinearLayout>

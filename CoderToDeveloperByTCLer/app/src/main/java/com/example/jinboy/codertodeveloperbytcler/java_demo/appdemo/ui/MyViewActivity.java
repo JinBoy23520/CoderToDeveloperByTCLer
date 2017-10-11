@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 
 public class MyViewActivity extends Activity implements View.OnClickListener{
-    private Button myButton1;
+    private Button myButton1,myButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,8 @@ public class MyViewActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.my_view_activity);
         myButton1 = (Button) findViewById(R.id.my_button1);
         myButton1.setOnClickListener(this);
+        myButton2 = (Button) findViewById(R.id.my_button2);
+        myButton2.setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +27,10 @@ public class MyViewActivity extends Activity implements View.OnClickListener{
             case R.id.my_button1:
                 Intent intent = new Intent(this,MapViewActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.my_button2:
+                Intent intent2 = new Intent(this,MapViewActivity.class);
+                startActivity(intent2);
                 break;
         }
     }
