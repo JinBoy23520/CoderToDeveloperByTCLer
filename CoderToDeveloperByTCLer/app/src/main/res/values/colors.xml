@@ -23,6 +23,12 @@
     <color name="title_line2">#FAB21F</color>
     <color name="title_line3">#78D125</color>
 
+    <color name="centiment_date_unselected_color">#45A2FF</color>
+    <color name="centiment_date_selected_color">#FFFFFF</color>
+
+    <!--wheel 的颜色值-->
+    <color name="whell_item_bg_select">#efefef</color>
+
     <color name="view1_bg">#d2d2d2</color>
 
     <color name="bg_loading">#f0f0f3</color>

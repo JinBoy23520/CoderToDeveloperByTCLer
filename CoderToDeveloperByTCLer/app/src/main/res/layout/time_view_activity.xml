@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.TimeViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义时间控件 开始时间到结束时间："/>
+
+    <Button
+        android:id="@+id/ui_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_common"
+        android:text="自定义时间"/>
+
+</LinearLayout>

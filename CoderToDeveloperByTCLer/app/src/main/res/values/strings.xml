@@ -4,4 +4,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ok">确 认</string>
+    <string name="cancel">取 消</string>
+
+    <string name="begin_at">开始于\n</string>
+    <string name="end_at">结束于\n</string>
+
+    <string name="time_start_larger_end_not_allowed">开始时间不能大于结束时间</string>
 </resources>

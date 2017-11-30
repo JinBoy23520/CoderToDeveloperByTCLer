@@ -83,9 +83,9 @@ public class BannerViewPagerAdapter extends PagerAdapter {
                     .into(view);
         }
         try {
-            if (mViews[position].getParent() == null)
+            if (mViews[position].getParent() == null) {
                 arg0.addView(mViews[position], 0);
-            else {
+            } else {
                 ((ViewGroup) mViews[position].getParent()).removeAllViews();
 
                 arg0.addView(mViews[position], 0);

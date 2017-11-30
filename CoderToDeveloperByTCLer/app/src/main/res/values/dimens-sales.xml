@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_radius">3dp</dimen>
+    <dimen name="ymd_text_size">17sp</dimen>
+    <dimen name="tcl_website_large_size">23sp</dimen>
+</resources>
