@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.RoundedLinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/shape_white"
+app:round="10dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_time_title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:text="@string/query_time_select_title"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <include
+        android:id="@+id/data_time_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_title"
+        android:layout_centerHorizontal="true"
+        layout="@layout/data_time_layout"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.WheelView
+            android:id="@+id/year"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/tv_yearUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="年" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#e8e8e8" />
+
+        <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.WheelView
+            android:id="@+id/month"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/tv_monthUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="月" />
+
+        <View
+            android:id="@+id/v_monthAndDay"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#e8e8e8" />
+
+        <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.WheelView
+            android:id="@+id/day"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/tv_dayUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="日" />
+
+        <View
+            android:id="@+id/v_dayAndHour"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#e8e8e8" />
+
+        <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.WheelView
+            android:id="@+id/hour"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/tv_hourUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="时" />
+
+        <View
+            android:id="@+id/v_dayAndMinute"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#e8e8e8" />
+
+        <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.WheelView
+            android:id="@+id/minute"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/tv_minuteUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="分" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/data_time_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_datetime_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_but_cancel"
+            android:padding="5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_bg"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_datetime_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_but_ensure"
+            android:padding="5dp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>
+
+</com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.widget.RoundedLinearLayout>

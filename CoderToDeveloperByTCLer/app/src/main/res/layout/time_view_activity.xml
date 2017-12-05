@@ -9,13 +9,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自定义时间控件 开始时间到结束时间："/>
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        android:layout_margin="5dp"
+        android:text="1.自定义时间控件 开始时间到结束时间："/>
 
     <Button
         android:id="@+id/ui_button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/btn_common"
-        android:text="自定义时间"/>
+        android:text="自定义时间 开始时间到结束时间"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black33"
+        android:layout_margin="5dp"
+        android:text="2.自定义时间控件 不可选择过去时间："/>
+
+    <Button
+        android:id="@+id/ui_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_common"
+        android:text="自定义时间 不可选择过去时间："/>
 
 </LinearLayout>
