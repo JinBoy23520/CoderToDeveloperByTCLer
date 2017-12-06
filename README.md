@@ -39,13 +39,13 @@ TCL雏鹰飞翔计划 · Android 篇
 [Android通信模块（单线程，多线程通信方式，Handler 与UI Thread的交互，Handler接合子线程的使用）](http://blog.csdn.net/dt235201314/article/details/73823653 "鼠标悬停显示")
 <br>
 <br>
-[SwipeRefreshLayout + RecyclerView 实现上拉加载下拉刷新](http://blog.csdn.net/dt235201314/article/details/75305222 "鼠标悬停显示")
+[SwipeRefreshLayout + RecyclerView 实现上拉加载下拉刷新](http://blog.csdn.net/dt235201314/article/details/75305222 "点击进入")
 <br>
 <br>
-[Android UI 之 TabLayout动态添加tab实现筛选及自动偏移（全选，单选）](http://blog.csdn.net/dt235201314/article/details/76528029 "鼠标悬停显示")
+[Android UI 之 TabLayout动态添加tab实现筛选及自动偏移（全选，单选）](http://blog.csdn.net/dt235201314/article/details/76528029 "点击进入")
 <br>
 <br>
-[Android UI 之 我的页面 圆形图片+通用item封装（简化代码量）](http://blog.csdn.net/dt235201314/article/details/76885747 "鼠标悬停显示")
+[Android UI 之 我的页面 圆形图片+通用item封装（简化代码量）](http://blog.csdn.net/dt235201314/article/details/76885747 "点击进入")
 <br>
 <br>
 [Android UI 之自定义标题栏 + 沉浸式状态栏](http://blog.csdn.net/dt235201314/article/details/77161904 "")
@@ -53,3 +53,11 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [Android 自定义View之中国地图热点区域分布](http://blog.csdn.net/dt235201314/article/details/78133932 "")
 <br>
+<br>
+[Android 绘制中国地图及热点省份分布](http://blog.csdn.net/dt235201314/article/details/78190492 "")
+<br>
+<br>
+[Android自定义时间控件选择开始时间到结束时间](http://blog.csdn.net/dt235201314/article/details/78678419 "")
+<br>
+<br>
+[Android自定义时间控件不可选择未来时间](http://blog.csdn.net/dt235201314/article/details/78718066 "")
