@@ -10,10 +10,6 @@ import android.widget.Button;
 
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
 public class HandlerThreadActivity extends AppCompatActivity implements View.OnClickListener {
     private Button idBtn1,idBtn2;
     private Handler threadhandler;

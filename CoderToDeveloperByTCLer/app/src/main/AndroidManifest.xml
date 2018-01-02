@@ -43,7 +43,8 @@
         <activity android:name=".ui.androiddemo.HandlerDemoActivity" />
         <activity android:name=".ui.recyclerview.SwipeRefreshRecyclerViewActivity" />
         <activity android:name=".ui.MapViewActivity" />
-        <activity android:name=".ui.TimeViewActivity"></activity>
+        <activity android:name=".ui.TimeViewActivity" />
+        <activity android:name=".ui.MyCsdnActivity"></activity>
     </application>
 
 </manifest>

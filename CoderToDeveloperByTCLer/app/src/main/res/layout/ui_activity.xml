@@ -23,4 +23,11 @@
         style="@style/btn_common"
         android:text="Android时间控件总结"/>
 
+    <Button
+        android:id="@+id/ui_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_common"
+        android:text="Android 侧滑页面"/>
+
 </LinearLayout>

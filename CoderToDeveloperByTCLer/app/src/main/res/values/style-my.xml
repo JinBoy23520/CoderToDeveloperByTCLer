@@ -18,7 +18,6 @@
         <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
     </style>
 
-
     <!-- ActionSheet进出动画 -->
     <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/popwindow_enter</item>
@@ -37,6 +36,16 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
         <!-- 模糊 -->
+    </style>
+
+    <!-- MyCsdnTabLayout背景 -->
+    <style name="customTabLayout" parent="Widget.Design.TabLayout">
+        <!--tab的背景色-->
+        <item name="tabBackground">@color/blue_bg</item>
+        <!--tab标题的文本风格-->
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <!--被选中tab的文本颜色-->
+        <item name="tabSelectedTextColor">@android:color/white</item>
     </style>
 
 </resources>

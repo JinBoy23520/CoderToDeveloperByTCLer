@@ -10,16 +10,18 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.recyclerv
 
 public class AndroidUIActivity extends Activity implements View.OnClickListener{
 
-    private Button ui_button1,uiButton2;
+    private Button uiButton1,uiButton2,uiButton3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ui_activity);
-        ui_button1 = (Button) findViewById(R.id.ui_button1);
+        uiButton1 = (Button) findViewById(R.id.ui_button1);
         uiButton2 = (Button) findViewById(R.id.ui_button2);
-        ui_button1.setOnClickListener(this);
+        uiButton3 = (Button) findViewById(R.id.ui_button3);
+        uiButton1.setOnClickListener(this);
         uiButton2.setOnClickListener(this);
+        uiButton3.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,10 @@ public class AndroidUIActivity extends Activity implements View.OnClickListener{
             case R.id.ui_button2:
                 Intent intent2 = new Intent(this,TimeViewActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.ui_button3:
+                Intent intent3 = new Intent(this,MyCsdnActivity.class);
+                startActivity(intent3);
                 break;
             default:
         }

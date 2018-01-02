@@ -14,10 +14,6 @@ import android.widget.Toast;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.R;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.Person;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
 public class HandlerDemoActivity extends Activity implements View.OnClickListener {
     private TextView idTv;
     private Button id_btn1,id_btn2,id_btn3,id_btn4,id_btn5,id_btn6,id_btn7,id_btn8,id_btn9;
