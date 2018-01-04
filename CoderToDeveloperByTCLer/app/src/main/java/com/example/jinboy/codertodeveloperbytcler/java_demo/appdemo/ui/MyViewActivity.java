@@ -25,13 +25,12 @@ public class MyViewActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.my_button1:
-                Intent intent = new Intent(this,MapViewActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this,MapViewActivity.class));
                 break;
             case R.id.my_button2:
-                Intent intent2 = new Intent(this,MapViewActivity.class);
-                startActivity(intent2);
+                startActivity(new Intent(this,MapViewActivity.class));
                 break;
+            default:
         }
     }
 }

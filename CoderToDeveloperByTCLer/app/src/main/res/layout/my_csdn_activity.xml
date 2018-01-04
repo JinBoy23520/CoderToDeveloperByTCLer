@@ -24,6 +24,17 @@
                 <!--fresco:placeholderImage="@drawable/mine_me"-->
                 <!--fresco:roundAsCircle="true" />-->
 
+            <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView
+                android:id="@+id/iv_mine_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/title_bar"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/mine_me"/>
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

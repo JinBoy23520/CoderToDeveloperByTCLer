@@ -39,20 +39,16 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
-                Intent intent = new Intent(this,FileOperationsActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, FileOperationsActivity.class));
                 break;
             case R.id.button2:
-                Intent intent1 = new Intent(this,SDcardOperationsActivity.class);
-                startActivity(intent1);
+                startActivity(new Intent(this, SDcardOperationsActivity.class));
                 break;
             case R.id.button3:
-                Intent intent2 = new Intent(this,SharedPreferenceActivity.class);
-                startActivity(intent2);
+                startActivity(new Intent(this, SharedPreferenceActivity.class));
                 break;
             case R.id.button4:
-                Intent intent3 = new Intent(this,HandlerDemoActivity.class);
-                startActivity(intent3);
+                startActivity(new Intent(this, HandlerDemoActivity.class));
                 break;
         }
     }

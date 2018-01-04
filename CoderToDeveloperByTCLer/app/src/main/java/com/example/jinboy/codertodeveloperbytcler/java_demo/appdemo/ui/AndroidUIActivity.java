@@ -28,16 +28,13 @@ public class AndroidUIActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ui_button1:
-                Intent intent = new Intent(this,SwipeRefreshRecyclerViewActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this,SwipeRefreshRecyclerViewActivity.class));
                 break;
             case R.id.ui_button2:
-                Intent intent2 = new Intent(this,TimeViewActivity.class);
-                startActivity(intent2);
+                startActivity(new Intent(this,TimeViewActivity.class));
                 break;
             case R.id.ui_button3:
-                Intent intent3 = new Intent(this,MyCsdnActivity.class);
-                startActivity(intent3);
+                startActivity(new Intent(this,MyCsdnActivity.class));
                 break;
             default:
         }

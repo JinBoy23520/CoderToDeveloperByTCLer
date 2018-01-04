@@ -3,13 +3,13 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_settings"
+            android:id="@+id/nav_csdn"
             android:icon="@mipmap/mine_about_icon"
-            android:title="设置" />
+            android:title="CSDN" />
         <item
-            android:id="@+id/nav_about"
+            android:id="@+id/nav_jianshu"
             android:icon="@mipmap/mine_about_icon"
-            android:title="关于" />
+            android:title="简书" />
     </group>
 
 </menu>

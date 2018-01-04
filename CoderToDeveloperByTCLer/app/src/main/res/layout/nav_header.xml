@@ -17,6 +17,16 @@
         <!--fresco:roundingBorderColor="@android:color/white"-->
         <!--fresco:roundingBorderWidth="1dp" />-->
 
+    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView
+        android:id="@+id/iv_mine_avatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mine_me"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +34,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:text="我的博客地址：\nhttp://blog.csdn.net/new_one_object"
+        android:text="我的博客地址：\nhttp://blog.csdn.net/dt235201314"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />

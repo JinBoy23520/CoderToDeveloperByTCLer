@@ -29,17 +29,15 @@ public class JavaDemoActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
-                Intent intent = new Intent(this,CollectionEnumgGnericsActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this,CollectionEnumgGnericsActivity.class));
                 break;
             case R.id.button2:
-                Intent intent1 = new Intent(this,HttpURLConnectionActivity.class);
-                startActivity(intent1);
+                startActivity(new Intent(this,HttpURLConnectionActivity.class));
                 break;
             case R.id.button3:
-                Intent intent2 = new Intent(this,HttpURLConnectionActivity.class);
-                startActivity(intent2);
+                startActivity(new Intent(this,HttpURLConnectionActivity.class));
                 break;
+            default:
         }
     }
 
