@@ -40,48 +40,40 @@ public class JsoupUtil {
         Document doc;
         BlogAuthor blogAuthor = null;
         Elements elements;
-        /*
-         * 作者名字
-         */
+        /**作者名字*/
         String authorName;
-        /*
-         * 访问数量
-         */
+        /** 访问数量*/
         String visitNumber;
-        /*
-         * 积分
-         */
+        /** 积分*/
         String mark;
-        /*
-         * 排名
-         */
+        /** 排名*/
         String rank;
-        /*
-         * 原创文章数量
-         */
+        /** 原创文章数量*/
         String originalArticleNumber;
-        /*
-         * 转载文章数量
-         */
+        /** 转载文章数量*/
         String reprintArticleNumber;
-        /*
-         * 翻译文章数量
-         */
+        /** 翻译文章数量*/
         String translateArticleNumber;
-        /*
-         * 评论数量
-         */
+        /** 评论数量*/
         String commentNumber;
-        /*
-         * 头像链接
-         */
+        /** 头像链接*/
         String avatarUrl;
+        /**我的代号*/
+        String code;
+        /**我的名言*/
+        String myHelloWorld;
 
         try {
             doc = Jsoup.connect(BLOG_HOMEPAGE)
                     .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31")
+                    //"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31"
+                    //"Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0"
                     .timeout(10000).get();
             if (doc != null) {
+                elements = doc.select("div#blog_title").select("h2").select("a");
+                code = elements.first().text();
+                elements = doc.select("div#blog_title").select("h3");
+                myHelloWorld = elements.first().text();
                 elements = doc.select("div#blog_userface").select("a.user_name");
                 authorName = elements.first().text();
                 elements = doc.select("div#blog_userface").select("a").select("img");
@@ -95,11 +87,11 @@ public class JsoupUtil {
                 reprintArticleNumber = elements.get(1).text();
                 translateArticleNumber = elements.get(2).text();
                 commentNumber = elements.get(3).text();
-                blogAuthor = new BlogAuthor(authorName, visitNumber, mark, rank, originalArticleNumber, reprintArticleNumber, translateArticleNumber, commentNumber, avatarUrl);
+                blogAuthor = new BlogAuthor(code,myHelloWorld,authorName, visitNumber, mark, rank, originalArticleNumber, reprintArticleNumber, translateArticleNumber, commentNumber, avatarUrl);
             }
         } catch (Exception e) {
             e.printStackTrace();
-            blogAuthor = new BlogAuthor("叶应是叶", "访问：0", "积分：0", "积分：0", "原创：0", "转载：0", "译文：0", "评论：0", "");
+            blogAuthor = new BlogAuthor("","","", "访问：0", "积分：0", "积分：0", "原创：0", "转载：0", "译文：0", "评论：0", "");
         }
         return blogAuthor;
     }

@@ -10,7 +10,7 @@ public class Constants {
     /**
      * 博主名称
      */
-    public static String BLOG_AUTHOR_NAME = "new_one_object";
+    public static String BLOG_AUTHOR_NAME = "dt235201314";
 
     /**
      * 博客目录

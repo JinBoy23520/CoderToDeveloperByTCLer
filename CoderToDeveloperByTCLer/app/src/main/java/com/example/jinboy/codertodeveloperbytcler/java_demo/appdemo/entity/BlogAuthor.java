@@ -34,7 +34,15 @@ public class BlogAuthor {
     //头像链接
     private String avatarUrl;
 
-    public BlogAuthor(String authorName, String visitNumber, String mark, String rank, String originalArticleNumber, String reprintArticleNumber, String translateArticleNumber, String commentNumber, String avatarUrl) {
+    //我的代号
+    private String code;
+
+    //我的名言
+    private String myHelloWorld;
+
+    public BlogAuthor(String code,String myHelloWorld,String authorName, String visitNumber, String mark, String rank, String originalArticleNumber, String reprintArticleNumber, String translateArticleNumber, String commentNumber, String avatarUrl) {
+        this.code = code;
+        this.myHelloWorld = myHelloWorld;
         this.authorName = authorName;
         this.visitNumber = visitNumber;
         this.mark = mark;
@@ -46,6 +54,21 @@ public class BlogAuthor {
         this.avatarUrl = avatarUrl;
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMyHelloWorld() {
+        return myHelloWorld;
+    }
+
+    public void setMyHelloWorld(String myHelloWorld) {
+        this.myHelloWorld = myHelloWorld;
+    }
     public String getAuthorName() {
         return authorName;
     }
