@@ -64,3 +64,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [Android UI 之侧滑抽屉菜单（一）——DrawerLayout + NavigationView](http://blog.csdn.net/dt235201314/article/details/78962509 "")
+<br>
+<br>
+[jsoup使用之抓取CSDN个人博客内容](http://blog.csdn.net/dt235201314/article/details/79003591 "")
