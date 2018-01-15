@@ -15,16 +15,16 @@ public class Constants {
     /**
      * 博客目录
      */
-    public static String DIRECTORY_1 = "Android";
+    public static String DIRECTORY_1 = "Android 自定义View";
 
-    public static String DIRECTORY_2 = "Android 自定义View";
+    public static String DIRECTORY_2 = "TCL 雏鹰飞翔计划 · Android 篇";
 
-    public static String DIRECTORY_3 = "Android 作品";
+    public static String DIRECTORY_3 = "Android Github";
 
-    public static String DIRECTORY_4 = "搭建个人博客";
+    public static String DIRECTORY_4 = "我的毕业论文";
 
-    public static String DIRECTORY_5 = "Git 的使用教程";
+    public static String DIRECTORY_5 = "Java 基础";
 
-    public static String DIRECTORY_6 = "其他";
+    public static String DIRECTORY_6 = "java源码";
 
 }

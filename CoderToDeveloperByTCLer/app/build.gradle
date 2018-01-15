@@ -33,11 +33,9 @@ dependencies {
     compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
-//    compile 'com.jakewharton:butterknife:8.5.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
     compile 'com.facebook.fresco:fresco:1.1.0'
     compile 'com.facebook.fresco:animated-gif:1.1.0'
     compile 'org.jsoup:jsoup:1.9.2'
     testCompile 'junit:junit:4.12'
-//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

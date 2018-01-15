@@ -15,24 +15,24 @@
             android:layout_height="wrap_content"
             android:background="@color/blue_bg">
 
-            <!--<com.facebook.drawee.view.SimpleDraweeView-->
-                <!--android:id="@+id/top_image"-->
-                <!--android:layout_width="50dp"-->
-                <!--android:layout_height="50dp"-->
-                <!--android:layout_alignParentStart="true"-->
-                <!--android:layout_margin="5dp"-->
-                <!--fresco:placeholderImage="@drawable/mine_me"-->
-                <!--fresco:roundAsCircle="true" />-->
-
-            <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView
-                android:id="@+id/iv_mine_avatar"
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/top_image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_below="@+id/title_bar"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/mine_me"/>
+                android:layout_alignParentStart="true"
+                android:layout_margin="5dp"
+                fresco:placeholderImage="@drawable/mine_me"
+                fresco:roundAsCircle="true" />
+
+            <!--<com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView-->
+                <!--android:id="@+id/iv_mine_avatar"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_below="@+id/title_bar"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:src="@drawable/mine_me"/>-->
 
 
             <TextView
@@ -46,18 +46,18 @@
 
         </RelativeLayout>
 
-        <!--<android.support.design.widget.TabLayout-->
-            <!--android:id="@+id/tabLayout"-->
-            <!--style="@style/customTabLayout"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:tabIndicatorHeight="0dp" />-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/customTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="0dp" />
 
-        <!--<android.support.v4.view.ViewPager-->
-            <!--android:id="@+id/id_viewpager"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_weight="1" />-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
     </LinearLayout>
 

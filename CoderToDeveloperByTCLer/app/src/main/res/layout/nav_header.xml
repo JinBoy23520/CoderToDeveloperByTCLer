@@ -6,37 +6,86 @@
     android:background="@drawable/bg_evenings"
     android:orientation="vertical">
 
-    <!--<com.facebook.drawee.view.SimpleDraweeView-->
-        <!--android:id="@+id/nav_head_image"-->
-        <!--android:layout_width="80dp"-->
-        <!--android:layout_height="80dp"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--fresco:placeholderImage="@drawable/mine_me"-->
-        <!--fresco:roundAsCircle="true"-->
-        <!--fresco:roundingBorderColor="@android:color/white"-->
-        <!--fresco:roundingBorderWidth="1dp" />-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nav_head_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        fresco:placeholderImage="@drawable/mine_me"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@android:color/white"
+        fresco:roundingBorderWidth="1dp" />
 
-    <com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView
-        android:id="@+id/iv_mine_avatar"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/title_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/mine_me"/>
+    <!--<com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.CircleImageView-->
+        <!--android:id="@+id/iv_mine_avatar"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_below="@+id/title_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:src="@drawable/mine_me"/>-->
 
     <TextView
+        android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
         android:text="我的博客地址：\nhttp://blog.csdn.net/dt235201314"
-        android:textColor="@color/white"
+        android:textColor="@color/blue_bg"
         android:textSize="15sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_originalArticleNumber"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:paddingLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="访问量："/>
+
+        <TextView
+            android:id="@+id/tv_visitNumber"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="访问量："/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="40dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="访问量："/>
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="访问量："/>
+
+    </LinearLayout>
 
 </LinearLayout>

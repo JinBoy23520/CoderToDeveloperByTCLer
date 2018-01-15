@@ -45,6 +45,7 @@ public class JsoupGetArticleUrl {
         /**
          * 新博客
          */
+        urls.add("http://blog.csdn.net/dt235201314/article/details/79003591");
         urls.add("http://blog.csdn.net/dt235201314/article/details/78962509");
         urls.add("http://blog.csdn.net/dt235201314/article/details/78850036");
         /**

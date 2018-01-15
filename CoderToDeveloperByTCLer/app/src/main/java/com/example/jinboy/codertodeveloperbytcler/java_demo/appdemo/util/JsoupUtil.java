@@ -91,7 +91,7 @@ public class JsoupUtil {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            blogAuthor = new BlogAuthor("","","", "访问：0", "积分：0", "积分：0", "原创：0", "转载：0", "译文：0", "评论：0", "");
+            blogAuthor = new BlogAuthor("行动者&&职业化","没有内心的平静就没有真正意义上的幸福","天一方蓝", "访问：0", "积分：0", "积分：0", "原创：0", "转载：0", "译文：0", "评论：0", "");
         }
         return blogAuthor;
     }
