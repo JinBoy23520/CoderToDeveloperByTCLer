@@ -69,6 +69,6 @@ TCL雏鹰飞翔计划 · Android 篇
 [jsoup使用之抓取CSDN个人博客内容](http://blog.csdn.net/dt235201314/article/details/79003591 "")
 <br>
 <br>
-[CSDN个人客户端实现]( "")
+[基于jousp实现CSDN个人客户端](http://blog.csdn.net/dt235201314/article/details/79076963 "")
 
 
