@@ -62,4 +62,13 @@ Android从初级到中级开发工程师的学习计划及文章demo整理
 <br>
 <br>
 [Android自定义时间控件不可选择未来时间](http://blog.csdn.net/dt235201314/article/details/78718066 "")
+<br>
+<br>
+[Android UI 之侧滑抽屉菜单（一）——DrawerLayout + NavigationView](http://blog.csdn.net/dt235201314/article/details/78962509 "")
+<br>
+<br>
+[jsoup使用之抓取CSDN个人博客内容](http://blog.csdn.net/dt235201314/article/details/79003591 "")
+<br>
+<br>
+[基于jousp实现CSDN个人客户端](http://blog.csdn.net/dt235201314/article/details/79076963 "")
 
