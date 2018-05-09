@@ -70,5 +70,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [基于jousp实现CSDN个人客户端](http://blog.csdn.net/dt235201314/article/details/79076963 "")
-
-
+<br>
+<br>
+[Android APP打开另一个APP完整逻辑实现](https://blog.csdn.net/dt235201314/article/details/80255143 "")
