@@ -78,7 +78,7 @@ public class JsoupGetIp {
                 System.getProperties().setProperty("http.proxyPort", AgencyIp.getPort());
 
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(60000);
                     Document doc = getDoc(blogUrl);
                     if(doc != null) {
                         count++;

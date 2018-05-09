@@ -15,7 +15,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.Titl
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 public class AndroidDemoActivity extends Activity implements View.OnClickListener {
-    private Button button1,button2,button3,button4;
+    private Button button1,button2,button3,button4,button5;
     private TitleView title_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button2 = (Button)findViewById(R.id.button2);
         button3 = (Button)findViewById(R.id.button3);
         button4 = (Button)findViewById(R.id.button4);
+        button5 = (Button)findViewById(R.id.button5);
         title_view = (TitleView) findViewById(R.id.title_view);
         title_view.setContainerBackgroundColor(this,R.color.gray2,0xffefefef);
         title_view.setLeftToBack(this);
@@ -33,6 +34,7 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +52,10 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
             case R.id.button4:
                 startActivity(new Intent(this, HandlerDemoActivity.class));
                 break;
+            case R.id.button5:
+                startActivity(new Intent(this, StarAnotherAppActivity.class));
+                break;
+                default:
         }
     }
 }

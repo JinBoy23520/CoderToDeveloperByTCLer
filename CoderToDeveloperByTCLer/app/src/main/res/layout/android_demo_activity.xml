@@ -50,5 +50,12 @@
         android:layout_below="@+id/button3"
         android:text="Handler线程通信Demo"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        style="@style/btn_common"
+        android:layout_below="@+id/button3"
+        android:text="app跳到另一个app"/>
 
 </LinearLayout>

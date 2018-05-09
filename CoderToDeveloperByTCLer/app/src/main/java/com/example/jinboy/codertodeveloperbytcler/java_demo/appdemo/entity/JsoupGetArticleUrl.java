@@ -22,6 +22,9 @@ public class JsoupGetArticleUrl {
      */
     public static List<String> getCsdnBlogsUrl(){
         List<String> urls = new ArrayList<String>();
+        List<String> urls1 = new ArrayList<String>();
+        List<String> urls2 = new ArrayList<String>();
+        List<String> urls3 = new ArrayList<String>();
 //        try {
 //            Document doc = getDoc("http://blog.csdn.net/dt235201314");
 //            Element body = doc.body();
@@ -43,55 +46,78 @@ public class JsoupGetArticleUrl {
 //        }
 
         /**
-         * 新博客
+         * Android studio 相关操作
          */
-        urls.add("http://blog.csdn.net/dt235201314/article/details/79003591");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78962509");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78850036");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80195146");
+
+
+        /**
+         * Java源码系列
+         */
+        urls.add("https://blog.csdn.net/dt235201314/article/details/79867960");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78741922");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78330377");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78318399");
+
+
+        /**
+         * Android转后台
+         */
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78850036");
+
+        /**
+         * 面试系列
+         */
+        urls.add("https://blog.csdn.net/dt235201314/article/details/79767958");
+        urls.add("https://blog.csdn.net/DT235201314/article/details/79807777");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/79669044");
+
         /**
          * 雏鹰系列
          */
-        urls.add("http://blog.csdn.net/dt235201314/article/details/66477296");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/69162998");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/70210256");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/70228260");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/66477296");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/69162998");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/70210256");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/70228260");
 
-        urls.add("http://blog.csdn.net/dt235201314/article/details/70841306");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/71480961");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/71588252");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/69951885");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/72833218");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/73176149");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/73823653");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/75305222");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/76528029");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/70841306");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/71480961");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/71588252");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/69951885");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/72833218");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/73176149");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/73823653");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/75305222");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/76528029");
 
-        urls.add("http://blog.csdn.net/dt235201314/article/details/76885747");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/77161904");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78133932");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78190492");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78678419");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78718066");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/76885747");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/77161904");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78133932");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78190492");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78678419");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78718066");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78962509");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/79003591");
 
         /**
         MPAndroidChart
          */
-        urls.add("http://blog.csdn.net/dt235201314/article/details/52222088");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/52242221");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/54135182");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/70142117");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/52222088");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/52242221");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/54135182");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/70142117");
 
-        urls.add("http://blog.csdn.net/dt235201314/article/details/70237777");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/75009573");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/76576618");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/77248347");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/77534468");
-        urls.add("http://blog.csdn.net/DT235201314/article/details/78085430");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/51367931");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/53894944");
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78741922");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/70237777");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/75009573");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/76576618");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/77248347");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/77534468");
+        urls.add("https://blog.csdn.net/DT235201314/article/details/78085430");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/51367931");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/53894944");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78741922");
 
-        urls.add("http://blog.csdn.net/dt235201314/article/details/78804754");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/78804754");
 
 
         return urls;
