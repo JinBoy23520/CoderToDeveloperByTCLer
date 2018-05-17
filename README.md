@@ -3,6 +3,9 @@ TCL雏鹰飞翔计划 · Android 篇
 从初级到中级Android开发工程师的学习计划及文章demo整理
 <br>
 <br>
+[TCL 雏鹰飞翔计划 Android篇](https://blog.csdn.net/dt235201314/article/details/63252425 "鼠标悬停显示")
+<br>
+<br>
 [Android 开发规范系统学习](http://blog.csdn.net/dt235201314/article/details/66477296 "鼠标悬停显示")
 <br>
 <br>
