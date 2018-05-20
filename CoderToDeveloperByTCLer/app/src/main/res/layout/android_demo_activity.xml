@@ -21,17 +21,13 @@
         android:layout_height="wrap_content"
         style="@style/btn_common"
         android:text="Android文件操作Demo"
-        android:id="@+id/button1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/button1" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/btn_common"
         android:id="@+id/button2"
-        android:layout_below="@+id/button1"
         android:text="SDcard文件操作Demo"/>
 
     <Button
@@ -39,7 +35,6 @@
         android:layout_height="wrap_content"
         style="@style/btn_common"
         android:id="@+id/button3"
-        android:layout_below="@+id/button2"
         android:text="SharedPreference保存用户信息Demo"/>
 
     <Button
@@ -47,7 +42,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/button4"
         style="@style/btn_common"
-        android:layout_below="@+id/button3"
+
         android:text="Handler线程通信Demo"/>
 
     <Button
@@ -55,7 +50,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/button5"
         style="@style/btn_common"
-        android:layout_below="@+id/button3"
         android:text="app跳到另一个app"/>
 
-</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        style="@style/btn_common"
+        android:text="bug天天见"/>
+
+    </LinearLayout>

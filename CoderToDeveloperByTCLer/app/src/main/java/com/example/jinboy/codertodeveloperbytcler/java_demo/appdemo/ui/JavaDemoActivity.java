@@ -40,5 +40,4 @@ public class JavaDemoActivity extends Activity implements View.OnClickListener {
             default:
         }
     }
-
 }

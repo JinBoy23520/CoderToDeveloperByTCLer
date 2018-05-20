@@ -51,6 +51,7 @@ public class JsoupGetArticleUrl {
         urls.add("https://blog.csdn.net/dt235201314/article/details/80195146");
 
 
+
         /**
          * Java源码系列
          */
@@ -99,6 +100,8 @@ public class JsoupGetArticleUrl {
         urls.add("https://blog.csdn.net/dt235201314/article/details/78962509");
         urls.add("https://blog.csdn.net/dt235201314/article/details/79003591");
 
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80255143");
+
         /**
         MPAndroidChart
          */
@@ -119,8 +122,30 @@ public class JsoupGetArticleUrl {
 
         urls.add("https://blog.csdn.net/dt235201314/article/details/78804754");
 
+        /**主推博客*/
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/50463194");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/52090020");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/51360013");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/51341104");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/54135182");
 
-        return urls;
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/78190492");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/78133932");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/77534468");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/77248347");
+
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/77161904");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/76885747");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/76528029");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/75009573");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/72833218");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/71588252");
+
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/78085430");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/78678419");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/80255143");
+        
+        return urls1;
     }
 
     /**

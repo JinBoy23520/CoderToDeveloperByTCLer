@@ -15,4 +15,6 @@
     <string name="end_at">结束于\n</string>
 
     <string name="time_start_larger_end_not_allowed">开始时间不能大于结束时间</string>
+
+    <string name="time_left">还有%ss</string>
 </resources>

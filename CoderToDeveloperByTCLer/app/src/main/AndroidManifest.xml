@@ -45,7 +45,8 @@
         <activity android:name=".ui.MapViewActivity" />
         <activity android:name=".ui.TimeViewActivity" />
         <activity android:name=".ui.MyCsdnActivity" />
-        <activity android:name=".ui.StarAnotherAppActivity"></activity>
+        <activity android:name=".ui.StarAnotherAppActivity"/>
+        <activity android:name=".ui.BugDemoActivity"/>
     </application>
 
 </manifest>

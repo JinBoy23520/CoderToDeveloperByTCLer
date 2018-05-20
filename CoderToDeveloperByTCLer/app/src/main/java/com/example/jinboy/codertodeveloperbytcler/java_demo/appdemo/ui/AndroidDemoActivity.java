@@ -15,7 +15,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.view.Titl
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.util.StatusBarUtil;
 
 public class AndroidDemoActivity extends Activity implements View.OnClickListener {
-    private Button button1,button2,button3,button4,button5;
+    private Button button1,button2,button3,button4,button5,button6;
     private TitleView title_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button3 = (Button)findViewById(R.id.button3);
         button4 = (Button)findViewById(R.id.button4);
         button5 = (Button)findViewById(R.id.button5);
+        button6 = (Button)findViewById(R.id.button6);
         title_view = (TitleView) findViewById(R.id.title_view);
         title_view.setContainerBackgroundColor(this,R.color.gray2,0xffefefef);
         title_view.setLeftToBack(this);
@@ -35,6 +36,7 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +56,12 @@ public class AndroidDemoActivity extends Activity implements View.OnClickListene
                 break;
             case R.id.button5:
                 startActivity(new Intent(this, StarAnotherAppActivity.class));
+                break;
+            case R.id.button6:
+                Intent intent = new Intent(this, BugDemoActivity.class);
+                intent.putExtra("regist_phone", "13517193924");
+                intent.putExtra("regist_pwd", "qq905054549");
+                startActivity(intent);
                 break;
                 default:
         }
