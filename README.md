@@ -76,3 +76,6 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [Android APP打开另一个APP完整逻辑实现](https://blog.csdn.net/dt235201314/article/details/80255143 "")
+<br>
+<br>
+[Android 8.0原生计时器Chronometer方法无效问题解决](https://blog.csdn.net/dt235201314/article/details/80384423 "")
