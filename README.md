@@ -63,6 +63,7 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [Android自定义时间控件选择开始时间到结束时间](http://blog.csdn.net/dt235201314/article/details/78678419 "")
+bug已修复
 <br>
 <br>
 [Android自定义时间控件不可选择未来时间](http://blog.csdn.net/dt235201314/article/details/78718066 "")
