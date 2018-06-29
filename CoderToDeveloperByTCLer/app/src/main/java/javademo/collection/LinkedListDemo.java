@@ -2,6 +2,7 @@ package javademo.collection;
 
 import java.util.LinkedList;
 
+
 /**
  * <pre>
  *     author : JinBiao
@@ -26,6 +27,7 @@ public class LinkedListDemo {
         }
         System.out.println();
     }
+
 
     public static void main(String[] args) {
         LinkedList<String> linkedList=new LinkedList<String>();

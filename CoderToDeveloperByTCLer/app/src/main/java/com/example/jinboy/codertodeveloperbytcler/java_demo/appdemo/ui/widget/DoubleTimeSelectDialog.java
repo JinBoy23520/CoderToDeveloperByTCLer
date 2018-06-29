@@ -73,6 +73,12 @@ public class DoubleTimeSelectDialog extends Dialog implements View.OnClickListen
      * 年
      */
     private WheelView mYearView;
+
+    /**
+     * 选择年
+     */
+    private int choiceYearView;
+
     /**
      * 月
      */
@@ -442,6 +448,7 @@ private String allowedBiggestTime;
     private OnWheelChangedListener yearWheelListener = new OnWheelChangedListener() {
         public void onChanged(WheelView wheel, int oldValue, int newValue) {
             int year_num = newValue + START_YEAR;
+            choiceYearView = year_num;
             if (year_num < year) {
                 mMonthView.setAdapter(new NumericWheelAdapter(1, 12));
             } else if (year_num >= year) {
@@ -471,7 +478,7 @@ private String allowedBiggestTime;
     private OnWheelChangedListener monthWheelListener = new OnWheelChangedListener() {
         public void onChanged(WheelView wheel, int oldValue, int newValue) {
             int month_num = newValue + 1;
-            if (month_num == (month + 1)) {
+            if (month_num == (month + 1) && choiceYearView == year) {
                 mDayView.setAdapter(new NumericWheelAdapter(1, day));
             } else {
                 // 判断大小月及是否闰年,用来确定"日"的数据

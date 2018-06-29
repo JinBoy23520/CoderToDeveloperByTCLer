@@ -59,6 +59,13 @@ public class JsoupGetArticleUrl {
         urls.add("https://blog.csdn.net/dt235201314/article/details/78741922");
         urls.add("https://blog.csdn.net/dt235201314/article/details/78330377");
         urls.add("https://blog.csdn.net/dt235201314/article/details/78318399");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80421037");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80452010");
+
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80661157");
+        urls.add("https://blog.csdn.net/dt235201314/article/details/80690157");
+//        urls.add("https://blog.csdn.net/dt235201314/article/details/80452010");
+
 
 
         /**
@@ -144,6 +151,13 @@ public class JsoupGetArticleUrl {
         urls1.add("https://blog.csdn.net/dt235201314/article/details/78085430");
         urls1.add("https://blog.csdn.net/dt235201314/article/details/78678419");
         urls1.add("https://blog.csdn.net/dt235201314/article/details/80255143");
+
+        /**优秀源码分析*/
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/80421037");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/80452010");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/80661157");
+        urls1.add("https://blog.csdn.net/dt235201314/article/details/80690157");
+
         
         return urls1;
     }

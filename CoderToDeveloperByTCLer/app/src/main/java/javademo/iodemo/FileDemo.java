@@ -56,6 +56,7 @@ public class FileDemo {
 //			f.mkdir();
 //		}
 
+
         //列出一个文件夹下面所有的文件
         File f = new File("C:/Users/Administrator/Desktop");
         if (f.isDirectory()) {
