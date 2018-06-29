@@ -1,5 +1,5 @@
 # CoderToDeveloperByTCLer
-TCL雏鹰飞翔计划 · Android 篇
+2016 TCL雏鹰飞翔计划 · Android 篇
 从初级到中级Android开发工程师的学习计划及文章demo整理
 <br>
 <br>
@@ -7,6 +7,9 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [Android 开发规范系统学习](http://blog.csdn.net/dt235201314/article/details/66477296 "鼠标悬停显示")
+<br>
+<br>
+##Java基础
 <br>
 <br>
 [Java OOP--面向对象程序设计](http://blog.csdn.net/dt235201314/article/details/69162998 "鼠标悬停显示")
@@ -18,7 +21,13 @@ TCL雏鹰飞翔计划 · Android 篇
 [Java 集合枚举泛型（二）](http://blog.csdn.net/dt235201314/article/details/70228260 "鼠标悬停显示")
 <br>
 <br>
+[Java 源码解读](https://github.com/JinBoy23520/JavaSource "鼠标悬停显示")
+<br>
+<br>
 [Java I/O](http://blog.csdn.net/dt235201314/article/details/70841306 "鼠标悬停显示")
+<br>
+<br>
+[Java I/O（二）](https://blog.csdn.net/dt235201314/article/details/80747666 "鼠标悬停显示")
 <br>
 <br>
 [Java 网络编程 OSI TCP/IP http/https HttpURLConnection/HttpClient Socket](http://blog.csdn.net/dt235201314/article/details/71480961 "鼠标悬停显示")
@@ -29,6 +38,7 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 [ Android处理后台返回数据——Json转实体类](http://blog.csdn.net/dt235201314/article/details/69951885 "鼠标悬停显示")
 <br>
+##Android UI
 <br>
 [Android UI 之 RecyclerView实现常见首页布局](http://blog.csdn.net/dt235201314/article/details/72833218 "鼠标悬停显示")
 <br>
@@ -61,6 +71,7 @@ TCL雏鹰飞翔计划 · Android 篇
 <br>
 <br>
 [Android自定义时间控件选择开始时间到结束时间](http://blog.csdn.net/dt235201314/article/details/78678419 "")
+（bug已修复）
 <br>
 <br>
 [Android自定义时间控件不可选择未来时间](http://blog.csdn.net/dt235201314/article/details/78718066 "")
