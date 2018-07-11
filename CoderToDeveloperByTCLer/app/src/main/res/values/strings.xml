@@ -17,4 +17,17 @@
     <string name="time_start_larger_end_not_allowed">开始时间不能大于结束时间</string>
 
     <string name="time_left">还有%ss</string>
+
+    <!--下载相关-->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="path">下载地址：</string>
+    <string name="button">开始下载</string>
+    <string name="success">下载完成</string>
+    <string name="error">下载出错</string>
+    <string name="stopbutton">暂停下载</string>
+    <string name="sdcarderror">没有SD卡</string>
+    <string name="fileaddress">http://nchc.dl.sourceforge.net/project/sevenzip/7-Zip/9.20/7z920.exe</string>
+
+
 </resources>

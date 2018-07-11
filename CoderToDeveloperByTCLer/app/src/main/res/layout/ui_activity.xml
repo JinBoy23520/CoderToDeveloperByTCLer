@@ -30,4 +30,11 @@
         style="@style/btn_common"
         android:text="Android 侧滑页面"/>
 
+    <Button
+        android:id="@+id/ui_button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_common"
+        android:text="断点下载"/>
+
 </LinearLayout>
