@@ -30,6 +30,9 @@
 [Java I/O（二）](https://blog.csdn.net/dt235201314/article/details/80747666 "鼠标悬停显示")
 <br>
 <br>
+[RandomAccessFile实现断点续传](https://blog.csdn.net/dt235201314/article/details/80911932 "鼠标悬停显示")
+<br>
+<br>
 [Java 网络编程 OSI TCP/IP http/https HttpURLConnection/HttpClient Socket](http://blog.csdn.net/dt235201314/article/details/71480961 "鼠标悬停显示")
 <br>
 <br>
