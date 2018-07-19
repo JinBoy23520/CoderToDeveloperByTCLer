@@ -93,3 +93,6 @@
 <br>
 <br>
 [Android 8.0原生计时器Chronometer方法无效问题解决](https://blog.csdn.net/dt235201314/article/details/80384423 "")
+<br>
+<br>
+[Android商城开发（一）——一次活动页需求引发的危机感](https://blog.csdn.net/dt235201314/article/details/81027990 "")
