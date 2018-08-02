@@ -20,6 +20,8 @@
 
     <dimen name="statusbar_view_height">0dp</dimen>
 
+    <dimen name="card_padding">60dp</dimen>
+
     <!--销售／粉丝权限详情页面尺寸-->
     <dimen name="authyBorderToLeft">13dp</dimen>
     <dimen name="authyBorderToRight">13dp</dimen>

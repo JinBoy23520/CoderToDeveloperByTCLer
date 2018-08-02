@@ -10,7 +10,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.recyclerv
 
 public class AndroidUIActivity extends Activity implements View.OnClickListener{
 
-    private Button uiButton1,uiButton2,uiButton3,uiButton4;
+    private Button uiButton1,uiButton2,uiButton3,uiButton4,uiButton5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,12 @@ public class AndroidUIActivity extends Activity implements View.OnClickListener{
         uiButton2 = (Button) findViewById(R.id.ui_button2);
         uiButton3 = (Button) findViewById(R.id.ui_button3);
         uiButton4 = (Button) findViewById(R.id.ui_button4);
+        uiButton5 = (Button) findViewById(R.id.ui_button5);
         uiButton1.setOnClickListener(this);
         uiButton2.setOnClickListener(this);
         uiButton3.setOnClickListener(this);
         uiButton4.setOnClickListener(this);
+        uiButton5.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,9 @@ public class AndroidUIActivity extends Activity implements View.OnClickListener{
                 break;
             case R.id.ui_button4:
                 startActivity(new Intent(this,DownLoadActivity.class));
+                break;
+            case R.id.ui_button5:
+                startActivity(new Intent(this,ViewPagerCardsActivity.class));
                 break;
             default:
         }

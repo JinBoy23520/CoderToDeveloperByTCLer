@@ -8,6 +8,9 @@
     <string name="ok">确 认</string>
     <string name="cancel">取 消</string>
 
+    <string name="text">核动力课程</string>
+    <string name="title">清华大学</string>
+
     <!--日期选择轮子的title-->
     <string name="query_time_select_title">请选择日期</string>
 
