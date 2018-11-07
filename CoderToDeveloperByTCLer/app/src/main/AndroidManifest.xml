@@ -47,7 +47,8 @@
         <activity android:name=".ui.StarAnotherAppActivity" />
         <activity android:name=".ui.BugDemoActivity" />
         <activity android:name=".ui.DownLoadActivity" />
-        <activity android:name=".ui.ViewPagerCardsActivity"></activity>
+        <activity android:name=".ui.ViewPagerCardsActivity" />
+        <activity android:name=".ui.MixedActivity"></activity>
     </application>
 
 </manifest>

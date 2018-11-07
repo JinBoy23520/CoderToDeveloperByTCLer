@@ -18,6 +18,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.Andro
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MixedEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.adapter.HomeAdapter;
@@ -63,12 +64,15 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         recyclerViewEntity.parseData();
         MyViewEntity myViewEntity = new MyViewEntity();
         myViewEntity.parseData();
+        MixedEntity mixedEntity = new MixedEntity();
+        mixedEntity.parseData();
         mEntities.add(bannerEntity);
         mEntities.add(menuEntity);
         mEntities.add(javaEntity);
         mEntities.add(androidUIEntity);
         mEntities.add(recyclerViewEntity);
         mEntities.add(myViewEntity);
+        mEntities.add(mixedEntity);
     }
 
     public void initView () {

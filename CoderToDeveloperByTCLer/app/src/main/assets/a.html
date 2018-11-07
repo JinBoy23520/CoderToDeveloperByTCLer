@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>js调用java</title>
+</head>
+<body>
+<p>
+    <input type="text" id="text1" value="请输入测试数据" width="400px" height="200px"/>
+</p>
+<p>
+    <input type="button" id="enter" value="调用安卓的方法" onclick="testClick();"
+    />
+</p>
+
+
+<script>
+
+         //js调用Android方法：接收Android传递过来的数据，并做处理
+
+         function testClick() {
+
+          //参数一：调用java中的方法   submitFromWeb是方法名，必须和Android中注册时候的方法名称保持一致
+          //参数二：返回给Android端的数据，可以为字符串，json等信息
+          //参数三：js接收到Android传递过来的数据之后的相应处理逻辑
+
+            window.WebViewJavascriptBridge.callHandler(
+               'submitFromWeb'
+               , {'param': "JS成功接收到数据---"}
+               , function(responseData) {
+                    alert(responseData)
+               }
+           );
+       }
+
+       //JS注册事件监听
+       function connectWebViewJavascriptBridge(callback) {
+           if (window.WebViewJavascriptBridge) {
+               callback(WebViewJavascriptBridge)
+           } else {
+               document.addEventListener(
+                   'WebViewJavascriptBridgeReady'
+                   , function() {
+                       callback(WebViewJavascriptBridge)
+                   },
+                   false
+               );
+           }
+       }
+
+        //注册回调函数，第一次连接时调用 初始化函数
+       connectWebViewJavascriptBridge(function(bridge) {
+            //初始化
+           bridge.init(function(message, responseCallback) {
+               var data = {
+                   'Javascript Responds': 'Wee!'
+               };
+               responseCallback(data);
+           });
+
+
+           //Android调用js方法：functionInJs方法名称需要保持一致 ，并返回给Android通知
+
+           bridge.registerHandler("functionInJs", function(data, responseCallback) {
+                alert(data);
+               var data = document.getElementById("text1").value;
+               var responseData = "我是Android调用js方法返回的数据---"+ data;
+               responseCallback(responseData);
+           });
+       })
+
+</script>
+
+</body>
+</html>

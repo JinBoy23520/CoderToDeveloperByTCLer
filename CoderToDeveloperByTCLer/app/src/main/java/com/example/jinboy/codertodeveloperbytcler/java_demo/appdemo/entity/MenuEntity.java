@@ -49,8 +49,8 @@ public class MenuEntity extends AbsBaseEntity {
         menuItemEntity4.setImgId(R.drawable.recyclerview_img);
         mItemEntities.add(menuItemEntity4);
         MenuItemEntity menuItemEntity5 = new MenuItemEntity();
-        menuItemEntity5.setTitle("RecyclerView");
-        menuItemEntity5.setImgId(R.drawable.recyclerview_img);
+        menuItemEntity5.setTitle("混合开发");
+        menuItemEntity5.setImgId(R.drawable.mixed_icon);
         mItemEntities.add(menuItemEntity5);
     }
 

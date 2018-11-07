@@ -15,6 +15,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuE
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.AndroidDemoActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.AndroidUIActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.JavaDemoActivity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.MixedActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.MyViewActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.RecyclerViewActivity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.ui.androiddemo.FileOperationsActivity;
@@ -88,6 +89,9 @@ public class MenuItemViewHolder extends BaseItemViewHolder<MenuEntity> {
                     case R.drawable.android_img:
                         Intent intent4 = new Intent(mContext,AndroidDemoActivity.class);
                         mContext.startActivity(intent4);
+                    case R.drawable.mixed_icon:
+                        Intent intent5 = new Intent(mContext,MixedActivity.class);
+                        mContext.startActivity(intent5);
                 }
             }
         });

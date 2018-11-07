@@ -11,6 +11,7 @@ import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.Andro
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.BannerEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.JavaEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MenuEntity;
+import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MixedEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.MyViewEntity;
 import com.example.jinboy.codertodeveloperbytcler.java_demo.appdemo.entity.RecyclerViewEntity;
 
@@ -39,6 +40,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final int TYPE_ANDRIOD_UI = 3;    //Android UI 页面
     private final int TYPE_RECYCLERVIEW = 4;    //RecyclerViewDemo 页面
     private final int TYPE_MYVIEW = 5;    //自定义View 页面
+    private final int MIXED_CODE = 6;    //自定义View 页面
 
     public HomeAdapter(Context context, List<AbsBaseEntity> typeList) {
         this.context = context;
@@ -61,6 +63,8 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             return TYPE_RECYCLERVIEW;
         } else if (entity instanceof MyViewEntity) {
             return TYPE_MYVIEW;
+        } else if (entity instanceof MixedEntity) {
+            return MIXED_CODE;
         } else {
             return 0;
         }
@@ -85,6 +89,9 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             case TYPE_MYVIEW:  //自定义View
                 return new MyViewItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
+
+            case MIXED_CODE:  //混合开发demo
+                return new MixedItemViewHolder(context, mInflater.inflate(R.layout.home_java_item, parent, false));
         }
         return null;
     }
