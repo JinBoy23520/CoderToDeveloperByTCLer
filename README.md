@@ -12,6 +12,12 @@
 ##Java基础
 <br>
 <br>
+源码阅读：
+<br>
+<br>
+理论知识：
+<br>
+<br>
 [Java OOP--面向对象程序设计](http://blog.csdn.net/dt235201314/article/details/69162998 "鼠标悬停显示")
 <br>
 <br>
@@ -21,13 +27,14 @@
 [Java 集合枚举泛型（二）](http://blog.csdn.net/dt235201314/article/details/70228260 "鼠标悬停显示")
 <br>
 <br>
-[Java 源码解读](https://github.com/JinBoy23520/JavaSource "鼠标悬停显示")
-<br>
-<br>
 [Java I/O](http://blog.csdn.net/dt235201314/article/details/70841306 "鼠标悬停显示")
 <br>
 <br>
-[Java I/O（二）](https://blog.csdn.net/dt235201314/article/details/80747666 "鼠标悬停显示")
+[Java I/O（二)](https://blog.csdn.net/dt235201314/article/details/80747666 "鼠标悬停显示")
+<br>
+<br>
+
+案例分享:
 <br>
 <br>
 [RandomAccessFile实现断点续传](https://blog.csdn.net/dt235201314/article/details/80911932 "鼠标悬停显示")
@@ -41,6 +48,7 @@
 <br>
 [ Android处理后台返回数据——Json转实体类](http://blog.csdn.net/dt235201314/article/details/69951885 "鼠标悬停显示")
 <br>
+
 ##Android UI
 <br>
 [Android UI 之 RecyclerView实现常见首页布局](http://blog.csdn.net/dt235201314/article/details/72833218 "鼠标悬停显示")
