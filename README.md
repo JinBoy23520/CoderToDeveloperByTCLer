@@ -107,3 +107,6 @@
 <br>
 <br>
 [Android商城开发（一）——一次活动页需求引发的危机感](https://blog.csdn.net/dt235201314/article/details/81027990 "")
+<br>
+<br>
+[Android混合开发（一）——移动端与前端交互之JSBridge引入](https://stilljin.blog.csdn.net/article/details/83314866 "")
