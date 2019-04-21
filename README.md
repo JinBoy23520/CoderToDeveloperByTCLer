@@ -110,3 +110,6 @@
 <br>
 <br>
 [Android混合开发（一）——移动端与前端交互之JSBridge引入](https://stilljin.blog.csdn.net/article/details/83314866 "")
+<br>
+<br>
+[Android混合开发（二）——JSBridge传值注意点](https://stilljin.blog.csdn.net/article/details/89164231 "")
