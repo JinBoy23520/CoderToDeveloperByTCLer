@@ -13,8 +13,8 @@
 ##java编程的逻辑相关笔记
 
 <br>
-[《Java编程的逻辑》笔记1--数据和变量](https://www.jianshu.com/p/5438be4dec30 "鼠标悬停显示")
 
+[《Java编程的逻辑》笔记1--数据和变量](https://www.jianshu.com/p/5438be4dec30 "鼠标悬停显示")
 <br>
 [《Java编程的逻辑》笔记2--赋值](https://www.jianshu.com/p/1ad325b0260a "鼠标悬停显示")
 
