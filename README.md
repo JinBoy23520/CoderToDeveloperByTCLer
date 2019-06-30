@@ -13,9 +13,13 @@
 ##java编程的逻辑相关笔记
 
 [《Java编程的逻辑》笔记1--数据和变量](https://www.jianshu.com/p/5438be4dec30 "鼠标悬停显示")
+
 [《Java编程的逻辑》笔记2--赋值](https://www.jianshu.com/p/1ad325b0260a "鼠标悬停显示")
+
 [《Java编程的逻辑》笔记3--基本运算](https://www.jianshu.com/p/6afddc4750ce "鼠标悬停显示")
+
 [《Java编程的逻辑》笔记4--条件执行以及原理](https://www.jianshu.com/p/cce8c5c7446f "鼠标悬停显示")
+
 [《Java编程的逻辑》笔记5-- 循环的本质](https://www.jianshu.com/p/36a9cb7eadef "鼠标悬停显示")
 [《Java编程的逻辑》笔记6--函数](https://www.jianshu.com/p/1d25bbb5fefc "鼠标悬停显示")
 [《Java编程的逻辑》笔记7--函数调用基本原理](https://www.jianshu.com/p/74e59dbc3935 "鼠标悬停显示")
