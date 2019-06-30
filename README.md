@@ -15,6 +15,7 @@
 <br>
 
 [《Java编程的逻辑》笔记1--数据和变量](https://www.jianshu.com/p/5438be4dec30 "鼠标悬停显示")
+
 <br>
 
 [《Java编程的逻辑》笔记2--赋值](https://www.jianshu.com/p/1ad325b0260a "鼠标悬停显示")
@@ -82,14 +83,16 @@
 [《Java编程的逻辑》笔记 18 - 为什么说继承是把双刃剑](https://www.jianshu.com/p/b9c36c4d88cf "鼠标悬停显示")
 
 <br>
+
 [《Java编程的逻辑》笔记 19 - 接口的本质](https://www.jianshu.com/p/b05b23c22ae7
  "鼠标悬停显示")
  
- <br>
+<br>
+ 
 [《Java编程的逻辑》笔记 20 - 抽象类](https://www.jianshu.com/p/9c2ad5b27a81
  "鼠标悬停显示")
  
- <br>
+<br>
  
 [《Java编程的逻辑》笔记21--内部类的本质](https://www.jianshu.com/p/4bec1688fdba)
 
